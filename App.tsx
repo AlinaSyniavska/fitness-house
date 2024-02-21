@@ -1,12 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {StatusBar} from 'expo-status-bar';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView className={'bg-lime-500'}>
+
+      <View className={'bg-sky-400 mt-[50px]'}>
+        <Text>Open up App.tsx to start working on your app!</Text>
+
+      </View>
+
+      <StatusBar style="auto"/>
+    </SafeAreaView>
   );
 }
 
