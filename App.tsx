@@ -4,7 +4,7 @@ import Navigation from "./app/navigation/Navigation";
 
 export default function App() {
   return (
-    <SafeAreaView className={'bg-lime-500'}>
+    <SafeAreaView>
       <Navigation/>
       <StatusBar style="auto"/>
     </SafeAreaView>
