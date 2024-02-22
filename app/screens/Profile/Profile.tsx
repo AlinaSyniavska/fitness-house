@@ -4,18 +4,21 @@ import {NativeStackScreenProps} from "react-native-screens/native-stack";
 
 import {RootStackParamList} from "../../navigation/Navigation";
 import FooterMenu from "../../layout/FooterMenu/FooterMenu";
+import {globalStyles} from "../../styles";
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Profile'>;
 
 const Profile: FC<Props> = ({route, navigation}) => {
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={globalStyles.screenContainer}>
       <View>
         <Text>Profile</Text>
       </View>
 
-      <FooterMenu/>
+      <View style={globalStyles.footer}>
+        <FooterMenu/>
+      </View>
     </SafeAreaView>
   );
 };
