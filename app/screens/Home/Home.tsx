@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {SafeAreaView, View, StyleSheet} from "react-native";
 import {NativeStackScreenProps} from "react-native-screens/native-stack";
 
@@ -8,22 +8,28 @@ import {globalStyles} from "../../styles";
 import {commonHelper} from "../../helpers/common.helper";
 import Card from "../../components/Card/Card";
 import Calendar from "../../components/Calendar/Calendar";
+import DailyActivity from "../../components/DailyActivity/DailyActivity";
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 const Home: FC<Props> = ({route, navigation}) => {
 
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
+  const [kcal, setKcal] = useState<number>(0);
+
+  useEffect(() => {
+    setKcal(commonHelper.getRandomKcal());
+  }, [selectedDate]);
 
   return (
     <SafeAreaView style={[globalStyles.screenContainer]}>
 
       <View style={styles.container}>
-
-        <Card date={selectedDate} kcal={commonHelper.format(commonHelper.getRandomKcal())}/>
+        <Card date={selectedDate} kcal={commonHelper.format(kcal)}/>
 
         <Calendar setDate={setSelectedDate}/>
 
+        <DailyActivity kcal={commonHelper.format(kcal)}/>
 
       </View>
 

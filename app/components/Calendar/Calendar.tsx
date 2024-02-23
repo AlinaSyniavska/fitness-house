@@ -1,8 +1,9 @@
 import React, {FC, useState} from 'react';
-import {View, Text, StyleSheet} from "react-native";
+import {View, StyleSheet} from "react-native";
 import CalendarStrip from 'react-native-calendar-strip';
-import {globalColors} from "../../constants/colors";
 import { Moment } from 'moment';
+
+import {globalColors} from "../../constants/colors";
 
 interface IProps {
   setDate: (date: Date) => any,
@@ -31,25 +32,15 @@ const Calendar: FC<IProps> = ({setDate}) => {
         onDateSelected={(date) => selectDate(date)}
         style={{width: 'auto', height:70, paddingTop: 5, paddingBottom: 5}}
       />
-
-
-
-      <View>
-        <Text>
-          {`${currentDate}`.split(' ').slice(0, 3).join(' ')}
-          <br />
-          Day Activity
-        </Text>
-      </View>
-
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     width: '100%',
+    height: 70,
   },
 })
 
