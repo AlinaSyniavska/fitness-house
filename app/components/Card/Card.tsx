@@ -4,15 +4,16 @@ import {ImageBackground, Text, View, StyleSheet} from "react-native";
 import {globalColors} from "../../constants/colors";
 
 interface IProps {
+  date: Date,
   kcal: string,
 }
 
-const Card: FC<IProps> = ({kcal}) => {
+const Card: FC<IProps> = ({date, kcal}) => {
   return (
     <View style={styles.card}>
       <ImageBackground source={require('../../../assets/home/Mask group.png')} resizeMode="cover" style={styles.bgCard}>
         <View style={styles.cardContent}>
-          <Text style={styles.cardDate}>{`${(new Date().toUTCString()).split(' ').slice(0, 3).join(' ')}`}</Text>
+          <Text style={styles.cardDate}>{`${(date.toUTCString()).split(' ').slice(0, 3).join(' ')}`}</Text>
           <Text style={styles.cardKcal}>{kcal} Kcal</Text>
         </View>
       </ImageBackground>
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
   },
   bgCard: {
     position: 'absolute',
-    top: -50,
+    top: -52,
     left: 0,
   },
   cardContent: {
