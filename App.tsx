@@ -1,25 +1,22 @@
 import {StatusBar} from 'expo-status-bar';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import {PaperProvider} from 'react-native-paper';
+
+import Navigation from "./app/navigation/Navigation";
+
 
 export default function App() {
   return (
-    <SafeAreaView className={'bg-lime-500'}>
-
-      <View className={'bg-sky-400 mt-[50px]'}>
-        <Text>Open up App.tsx to start working on your app!</Text>
-
-      </View>
-
-      <StatusBar style="auto"/>
-    </SafeAreaView>
+    <PaperProvider>
+      <SafeAreaView style={{
+        width: '100%',
+        height: '100%',
+      }}>
+        <Navigation/>
+        <StatusBar style="auto"/>
+      </SafeAreaView>
+    </PaperProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+

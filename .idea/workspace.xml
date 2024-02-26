@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd2d501b-b9a3-47d7-bbf2-5b32d1151c9a" name="Changes" comment="" />
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/components/CustomProgressBar/CustomProgressBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/common.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/common.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/Navigation.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,10 +21,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 5
 }]]></component>
-  <component name="ProjectId" id="2cfvDinPhfJevpx0pkr8H0MYcl6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2ctxCul8lzSMggbeKdwkrzJ6bEy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,7 +33,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -32,12 +42,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fd2d501b-b9a3-47d7-bbf2-5b32d1151c9a" name="Changes" comment="" />
-      <created>1708515331083</created>
+      <changelist id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="" />
+      <created>1708944555781</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708515331083</updated>
-      <workItem from="1708515332197" duration="25000" />
+      <updated>1708944555781</updated>
+      <workItem from="1708944557407" duration="280000" />
     </task>
     <servers />
   </component>
