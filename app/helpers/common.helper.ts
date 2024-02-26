@@ -8,5 +8,6 @@ export const commonHelper = {
     )
   },
   getRandomKcal: (): number => Math.floor(Math.random() * (2000 - 1500) + 1500),
+  getRandomWorkoutTime: (): number => Math.round(Math.random() * (3 - 1) + 1),
 
 }
