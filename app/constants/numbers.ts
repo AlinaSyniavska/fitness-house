@@ -5,7 +5,7 @@ export const numbers = {
   minWorkoutTime: 1,
   maxStepsCounter: 10000,
   minStepsCounter: 8000,
-  maxRopesCounter: 1200,
-  minRopesCounter: 800,
+  maxPointsCounter: 1200,
+  minPointsCounter: 800,
 };
 

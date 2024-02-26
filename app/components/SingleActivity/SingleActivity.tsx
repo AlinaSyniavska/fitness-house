@@ -9,6 +9,7 @@ interface IProps {
 	title: string;
 	subtitle: string;
 	kcal: number;
+	type: string;
 }
 
 const SingleActivity: FC<IProps> = ({ title, subtitle, kcal }) => {

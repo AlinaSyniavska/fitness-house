@@ -29,21 +29,24 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
         }}
       >
         <SingleActivity
-          title={`${commonHelper.getRandomWorkoutTime()} h`}
-          subtitle={'Time'}
+          title={`${commonHelper.getRandomWorkoutTime()}`}
+          subtitle={'Time (hours)'}
           kcal={+kcal * 0.7}
+          type="time"
         />
 
         <SingleActivity
           title={`${commonHelper.getRandomStepsCounter()}`}
           subtitle={'Steps'}
           kcal={+kcal * 0.1}
+          type="steps"
         />
 
         <SingleActivity
           title={`${commonHelper.getRandomRopesCounter()}`}
           subtitle={'Points'}
           kcal={+kcal * 0.2}
+          type="points"
         />
       </View>
     </View>
