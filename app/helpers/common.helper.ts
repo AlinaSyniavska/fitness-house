@@ -1,3 +1,5 @@
+import {numbers} from "../constants/numbers";
+
 export const commonHelper = {
 	format: (num: number) => {
 		const n = String(num),
@@ -6,10 +8,10 @@ export const commonHelper = {
 			p < 0 || i < p ? `${m} ` : m
 		);
 	},
-	getRandomKcal: (): number => Math.floor(Math.random() * (2000 - 1500) + 1500),
-	getRandomWorkoutTime: (): number => Math.round(Math.random() * (3 - 1) + 1),
+	getRandomKcal: (): number => Math.floor(Math.random() * (numbers.maxKcal - numbers.minKcal) + numbers.minKcal),
+	getRandomWorkoutTime: (): number => Math.round(Math.random() * (numbers.maxWorkoutTime - numbers.minWorkoutTime) + numbers.minWorkoutTime),
 	getRandomStepsCounter: (): number =>
-		Math.round(Math.random() * (10000 - 9000) + 9000),
+		Math.round(Math.random() * (numbers.maxStepsCounter - numbers.minStepsCounter) + numbers.minStepsCounter),
 	getRandomRopesCounter: (): number =>
-		Math.round(Math.random() * (1200 - 1000) + 1000),
+		Math.round(Math.random() * (numbers.maxRopesCounter - numbers.minRopesCounter) + numbers.minRopesCounter),
 };
