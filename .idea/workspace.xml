@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added constant numbers">
-      <change beforePath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" afterDir="false" />
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added a helper to calculate progress">
       <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/common.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/common.helper.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
-      <workItem from="1708967722199" duration="1309000" />
+      <workItem from="1708967722199" duration="1618000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -70,7 +68,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708968724853</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added a helper to calculate progress">
+      <option name="closed" value="true" />
+      <created>1708969138802</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708969138802</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added constant numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added constant numbers" />
+    <MESSAGE value="Added a helper to calculate progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a helper to calculate progress" />
   </component>
 </project>
