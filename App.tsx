@@ -13,7 +13,7 @@ export default function App() {
         height: '100%',
       }}>
         <Navigation/>
-        <StatusBar style="auto"/>
+        <StatusBar style="auto" backgroundColor={'white'}/>
       </SafeAreaView>
     </PaperProvider>
   );

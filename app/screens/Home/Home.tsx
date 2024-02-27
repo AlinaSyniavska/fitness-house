@@ -3,7 +3,7 @@ import {SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
 import {NativeStackScreenProps} from 'react-native-screens/native-stack';
 
 import Calendar from '../../components/Calendar/Calendar';
-import Card from '../../components/Card/Card';
+import HomePinkCard from '../../components/HomePinkCard/HomePinkCard';
 import DailyActivity from '../../components/DailyActivity/DailyActivity';
 import {commonHelper} from '../../helpers/common.helper';
 import FooterMenu from '../../layout/FooterMenu/FooterMenu';
@@ -24,7 +24,7 @@ const Home: FC<Props> = ({route, navigation}) => {
     <SafeAreaView style={[globalStyles.screenContainer]}>
       <ScrollView>
         <View style={styles.container}>
-          <Card date={selectedDate} kcal={commonHelper.format(kcal)}/>
+          <HomePinkCard date={selectedDate} kcal={commonHelper.format(kcal)}/>
 
           <Calendar setDate={setSelectedDate}/>
 
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     // justifyContent:'space-between',
     alignItems: 'center',
     gap: 30,
+    marginTop: 50,
     paddingHorizontal: 10,
     paddingVertical: 30,
   },

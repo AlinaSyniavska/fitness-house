@@ -8,7 +8,7 @@ interface IProps {
   kcal: string,
 }
 
-const Card: FC<IProps> = ({date, kcal}) => {
+const HomePinkCard: FC<IProps> = ({date, kcal}) => {
   return (
     <View>
 
@@ -26,7 +26,6 @@ const Card: FC<IProps> = ({date, kcal}) => {
 
 const styles = StyleSheet.create({
   card: {
-    marginTop: 50,
     width: 340,
     height: 185,
     borderRadius: 20,
@@ -34,6 +33,7 @@ const styles = StyleSheet.create({
   },
   bgCard: {
     position: 'absolute',
+    top: -52,
     zIndex: 1,
   },
   cardContent: {
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Card;
+export default HomePinkCard;

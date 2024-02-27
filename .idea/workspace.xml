@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Fixed style of the main card from Home screen">
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added ScrollView to scroll a screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Card/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HomePinkCard/HomePinkCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Profile/Profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
-      <workItem from="1708967722199" duration="8695000" />
+      <workItem from="1708967722199" duration="14125000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -96,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709023216309</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added ScrollView to scroll a screen">
+      <option name="closed" value="true" />
+      <created>1709024528587</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709024528587</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +128,7 @@
     <MESSAGE value="Added a helper to calculate progress" />
     <MESSAGE value="Implemented randomly performed activities" />
     <MESSAGE value="Fixed style of the main card from Home screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed style of the main card from Home screen" />
+    <MESSAGE value="Added ScrollView to scroll a screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ScrollView to scroll a screen" />
   </component>
 </project>

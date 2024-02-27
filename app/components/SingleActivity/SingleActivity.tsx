@@ -30,7 +30,9 @@ const SingleActivity: FC<IProps> = ({title, subtitle, kcal, type}) => {
         <CustomProgressBar progress={(Math.random() * (0.9 - 0.4) + 0.4)} color={globalColors.pink}/>
       </View>
 
-      <ActivityCard kcal={kcal}/>
+      <View style={{marginTop: 50}}>
+        <ActivityCard kcal={kcal}/>
+      </View>
     </View>
   );
 };
