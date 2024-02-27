@@ -23,17 +23,18 @@ const ActivityCard: FC<IProps> = ({kcal}) => {
 
       <Card style={styles.card}>
         <Card.Title title="" subtitle="" left={LeftContent} style={{
-          // backgroundColor: globalColors.pink,
           minHeight: 40,
-          // borderRadius: 20,
+          borderTopWidth: 3,
         }}/>
         <Card.Content style={{
           // marginTop: 0,
         }}>
           <Text variant="titleLarge" style={{
             color: 'white',
-          }}>{kcal}</Text>
-          <Text variant="bodyMedium">Dumbbell</Text>
+            fontSize: 16,
+            fontWeight: 'bold',
+          }}>{kcal} Kcal</Text>
+          <Text variant="bodyMedium" className={'text-white/50'}>Dumbbell</Text>
         </Card.Content>
       </Card>
 
