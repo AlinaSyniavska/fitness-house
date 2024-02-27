@@ -20,12 +20,7 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
         subtitleSize={16}
       />
 
-      <View
-        style={{
-          flex: 1,
-          flexDirection: 'row',
-        }}
-      >
+      <View style={styles.activitiesContainer}>
         <SingleActivity
           title={`${commonHelper.getRandomWorkoutTime()}`}
           subtitle={'Time (hours)'}
@@ -57,6 +52,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 30,
     width: '100%',
+  },
+  activitiesContainer: {
+    flex: 1,
+    flexDirection: 'row',
   },
 });
 

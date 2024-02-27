@@ -12,11 +12,7 @@ const Card: FC<IProps> = ({date, kcal}) => {
   return (
     <View>
 
-      <Image source={require('../../../assets/home/Mask group.png')}
-             style={{
-               position: 'absolute',
-               zIndex: 1,
-             }}/>
+      <Image source={require('../../../assets/home/Mask group.png')} style={styles.bgCard}/>
       <View style={styles.card}>
         <View style={styles.cardContent}>
           <Text style={styles.cardDate}>{`${(date.toUTCString()).split(' ').slice(0, 3).join(' ')}`}</Text>
@@ -35,6 +31,10 @@ const styles = StyleSheet.create({
     height: 185,
     borderRadius: 20,
     backgroundColor: globalColors.pink,
+  },
+  bgCard: {
+    position: 'absolute',
+    zIndex: 1,
   },
   cardContent: {
     paddingHorizontal: 20,
