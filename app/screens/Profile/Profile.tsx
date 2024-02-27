@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {SafeAreaView, Text, View} from "react-native";
+import {Image, SafeAreaView, Text, View} from "react-native";
 import {NativeStackScreenProps} from "react-native-screens/native-stack";
 
 import {RootStackParamList} from "../../navigation/Navigation";
@@ -14,6 +14,7 @@ const Profile: FC<Props> = ({route, navigation}) => {
     <SafeAreaView style={globalStyles.screenContainer}>
       <View>
         <Text>Profile</Text>
+        <Image source={require('../../../assets/home/Mask group.png')}/>
       </View>
 
       <View style={globalStyles.footer}>

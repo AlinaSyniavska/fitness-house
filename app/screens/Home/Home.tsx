@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import { SafeAreaView, StyleSheet, View } from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
 import { NativeStackScreenProps } from 'react-native-screens/native-stack';
 
 import Calendar from '../../components/Calendar/Calendar';
@@ -22,12 +22,17 @@ const Home: FC<Props> = ({ route, navigation }) => {
 
 	return (
 		<SafeAreaView style={[globalStyles.screenContainer]}>
+
+{/*			<ScrollView>
+
+			</ScrollView>*/}
+
 			<View style={styles.container}>
 				<Card date={selectedDate} kcal={commonHelper.format(kcal)} />
 
 				<Calendar setDate={setSelectedDate} />
 
-				<DailyActivity kcal={commonHelper.format(kcal)} />
+				<DailyActivity kcal={kcal} />
 			</View>
 
 			<View style={globalStyles.footer}>

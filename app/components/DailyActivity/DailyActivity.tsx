@@ -6,10 +6,11 @@ import SingleActivity from '../SingleActivity/SingleActivity';
 import Title from '../Title/Title';
 
 interface IProps {
-  kcal: string
+  kcal: number,
 }
 
 const DailyActivity: FC<IProps> = ({kcal}) => {
+
   return (
     <View style={styles.container}>
       <Title
@@ -23,29 +24,26 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
         style={{
           flex: 1,
           flexDirection: 'row',
-          // justifyContent: 'center',
-          // alignItems: 'center',
-          // padding: 10,
         }}
       >
         <SingleActivity
           title={`${commonHelper.getRandomWorkoutTime()}`}
           subtitle={'Time (hours)'}
-          kcal={+kcal * 0.7}
+          kcal={Math.trunc(kcal * 0.7)}
           type="time"
         />
 
         <SingleActivity
           title={`${commonHelper.getRandomStepsCounter()}`}
           subtitle={'Steps'}
-          kcal={+kcal * 0.1}
+          kcal={Math.trunc(kcal * 0.1)}
           type="steps"
         />
 
         <SingleActivity
           title={`${commonHelper.getRandomRopesCounter()}`}
           subtitle={'Points'}
-          kcal={+kcal * 0.2}
+          kcal={Math.trunc(kcal * 0.2)}
           type="points"
         />
       </View>

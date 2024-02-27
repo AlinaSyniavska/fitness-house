@@ -5,6 +5,7 @@ import {globalColors} from '../../constants/colors';
 import CustomProgressBar from '../CustomProgressBar/CustomProgressBar';
 import Title from '../Title/Title';
 import {commonHelper} from "../../helpers/common.helper";
+import ActivityCard from "../ActivityCard/ActivityCard";
 
 interface IProps {
   title: string;
@@ -14,6 +15,7 @@ interface IProps {
 }
 
 const SingleActivity: FC<IProps> = ({title, subtitle, kcal, type}) => {
+
   return (
     <View style={styles.container}>
       <Title
@@ -27,6 +29,8 @@ const SingleActivity: FC<IProps> = ({title, subtitle, kcal, type}) => {
         <CustomProgressBar progress={commonHelper.getProgress(type, +title)} color={'#000'}/>
         <CustomProgressBar progress={(Math.random() * (0.9 - 0.4) + 0.4)} color={globalColors.pink}/>
       </View>
+
+      <ActivityCard kcal={kcal}/>
     </View>
   );
 };
@@ -34,6 +38,7 @@ const SingleActivity: FC<IProps> = ({title, subtitle, kcal, type}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     width: '100%',
   },
   progressBarContainer: {

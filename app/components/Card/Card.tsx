@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {ImageBackground, Text, View, StyleSheet} from "react-native";
+import {Text, View, StyleSheet, Image} from "react-native";
 
 import {globalColors} from "../../constants/colors";
 
@@ -10,41 +10,42 @@ interface IProps {
 
 const Card: FC<IProps> = ({date, kcal}) => {
   return (
-    <View style={styles.card}>
-      <ImageBackground source={require('../../../assets/home/Mask group.png')} resizeMode="cover" style={styles.bgCard}>
+    <View>
+
+      <Image source={require('../../../assets/home/Mask group.png')}
+             style={{
+               position: 'absolute',
+               zIndex: 1,
+             }}/>
+      <View style={styles.card}>
         <View style={styles.cardContent}>
           <Text style={styles.cardDate}>{`${(date.toUTCString()).split(' ').slice(0, 3).join(' ')}`}</Text>
           <Text style={styles.cardKcal}>{kcal} Kcal</Text>
         </View>
-      </ImageBackground>
+      </View>
+
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   card: {
-    position: 'relative',
     marginTop: 50,
     width: 340,
     height: 185,
     borderRadius: 20,
     backgroundColor: globalColors.pink,
   },
-  bgCard: {
-    position: 'absolute',
-    top: -52,
-    left: 0,
-  },
   cardContent: {
     paddingHorizontal: 20,
-    paddingTop: 100,
+    paddingTop: 50,
   },
   cardDate: {
-    color: '#fff',
+    color: '#000',
     fontSize: 16,
   },
   cardKcal: {
-    color: '#fff',
+    color: '#000',
     fontSize: 24,
     fontWeight: 'bold',
   }
