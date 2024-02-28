@@ -1,13 +1,51 @@
 import React, {FC} from 'react';
 import {StyleSheet, View} from 'react-native';
 
+import { FontAwesome6 } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
 import {commonHelper} from '../../helpers/common.helper';
 import SingleActivity from '../SingleActivity/SingleActivity';
 import Title from '../Title/Title';
+import {IActivity} from "../../interfaces/activity.interface";
 
 interface IProps {
   kcal: number,
 }
+
+const activities: IActivity[] = [
+  {
+    id: 1,
+    getTitle: () => commonHelper.getRandomWorkoutTime(),
+    title: '',
+    subtitle: 'Time (hours)',
+    perKcal: 0.7,
+    type: 'time',
+    cardIcon: <FontAwesome6 name="dumbbell" size={18} color="white" />,
+    cardText: 'Dumbbell',
+  },
+  {
+    id: 2,
+    getTitle: () => commonHelper.getRandomStepsCounter(),
+    title: '',
+    subtitle: 'Steps',
+    perKcal: 0.1,
+    type: 'steps',
+    cardIcon: <Ionicons name="footsteps-outline" size={18} color="white" />,
+    cardText: 'Treadmill',
+  },
+  {
+    id: 3,
+    getTitle: () => commonHelper.getRandomRopesCounter(),
+    title: '',
+    subtitle: 'Points',
+    perKcal: 0.2,
+    type: 'points',
+    cardIcon: <MaterialCommunityIcons name="jump-rope" size={18} color="white" />,
+    cardText: 'Rope',
+  },
+];
 
 const DailyActivity: FC<IProps> = ({kcal}) => {
 
@@ -21,26 +59,17 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
       />
 
       <View style={styles.activitiesContainer}>
-        <SingleActivity
-          title={`${commonHelper.getRandomWorkoutTime()}`}
-          subtitle={'Time (hours)'}
-          kcal={Math.trunc(kcal * 0.7)}
-          type="time"
-        />
-
-        <SingleActivity
-          title={`${commonHelper.getRandomStepsCounter()}`}
-          subtitle={'Steps'}
-          kcal={Math.trunc(kcal * 0.1)}
-          type="steps"
-        />
-
-        <SingleActivity
-          title={`${commonHelper.getRandomRopesCounter()}`}
-          subtitle={'Points'}
-          kcal={Math.trunc(kcal * 0.2)}
-          type="points"
-        />
+        {
+          activities.map(item => (
+            <SingleActivity
+              activity={{
+                ...item,
+                perKcal: commonHelper.getPercentageKcal(kcal, item.perKcal),
+                title: item.getTitle && item.getTitle().toString() || item.title,
+              }}
+            />
+          ))
+        }
       </View>
     </View>
   );

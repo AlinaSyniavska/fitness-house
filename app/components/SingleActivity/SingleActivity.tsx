@@ -6,15 +6,15 @@ import CustomProgressBar from '../CustomProgressBar/CustomProgressBar';
 import Title from '../Title/Title';
 import {commonHelper} from "../../helpers/common.helper";
 import ActivityCard from "../ActivityCard/ActivityCard";
+import {IActivity} from "../../interfaces/activity.interface";
 
 interface IProps {
-  title: string;
-  subtitle: string;
-  kcal: number;
-  type: string;
+  activity: IActivity,
 }
 
-const SingleActivity: FC<IProps> = ({title, subtitle, kcal, type}) => {
+const SingleActivity: FC<IProps> = ({activity}) => {
+
+  const {title, subtitle, type, perKcal, cardIcon, cardText} = activity;
 
   return (
     <View style={styles.container}>
@@ -30,9 +30,9 @@ const SingleActivity: FC<IProps> = ({title, subtitle, kcal, type}) => {
         <CustomProgressBar progress={(Math.random() * (0.9 - 0.4) + 0.4)} color={globalColors.pink}/>
       </View>
 
-      <View style={{marginTop: 50}}>
-        <ActivityCard kcal={kcal}/>
-      </View>
+{/*      <View style={{marginTop: 50}}>
+        <ActivityCard kcal={perKcal}/>
+      </View>*/}
     </View>
   );
 };

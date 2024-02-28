@@ -11,6 +11,8 @@ export const commonHelper = {
 
   getRandomKcal: (): number => Math.floor(Math.random() * (numbers.maxKcal - numbers.minKcal) + numbers.minKcal),
 
+  getPercentageKcal: (kcal: number, percentage: number): number => Math.trunc(kcal * percentage),
+
   getRandomWorkoutTime: (): number => Math.round(Math.random() * (numbers.maxWorkoutTime - numbers.minWorkoutTime) + numbers.minWorkoutTime),
 
   getRandomStepsCounter: (): number =>
