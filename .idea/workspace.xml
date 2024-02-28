@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Re-factored some code">
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added some content to Activity card. Installed a library to work with a hook useHover">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/interfaces/activity.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/interfaces/activity.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
-      <workItem from="1708967722199" duration="28371000" />
+      <workItem from="1708967722199" duration="32945000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -136,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709114326007</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added some content to Activity card. Installed a library to work with a hook useHover">
+      <option name="closed" value="true" />
+      <created>1709116721139</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709116721139</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +166,7 @@
     <MESSAGE value="Implemented some content from Activity card" />
     <MESSAGE value="Implemented some content on  Activity card" />
     <MESSAGE value="Re-factored some code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-factored some code" />
+    <MESSAGE value="Added some content to Activity card. Installed a library to work with a hook useHover" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some content to Activity card. Installed a library to work with a hook useHover" />
   </component>
 </project>

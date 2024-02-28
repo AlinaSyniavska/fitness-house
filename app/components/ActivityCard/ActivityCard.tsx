@@ -1,7 +1,7 @@
-import React, {FC, ReactNode, useRef} from 'react';
-import {StyleSheet, View, Text} from "react-native";
+import React, {FC, ReactNode} from 'react';
+import {StyleSheet, View, Text, Pressable} from "react-native";
 import {Card} from "react-native-paper";
-import { useHover, useFocus, useActive } from 'react-native-web-hooks';
+import { Hoverable } from 'react-native-web-hooks';
 
 import {globalColors} from "../../constants/colors";
 
@@ -13,39 +13,29 @@ interface IProps {
 
 const ActivityCard: FC<IProps> = ({kcal, cardIcon, cardText}) => {
 
-  const ref = useRef(null);
-
-  const isHovered = useHover(ref);
-
   return (
     <View style={styles.container}>
-
-      <Card
-        ref={ref.current}
-        style={[styles.card,
-        isHovered && {
-          backgroundColor: globalColors.pink,
-        }
-          ]}
-      >
-        <Card.Title title="" subtitle=""
-                    left={() => cardIcon}
-                    style={{
-          minHeight: 40,
-          borderTopWidth: 3,
-        }}/>
-        <Card.Content style={{
-          // marginTop: 0,
-        }}>
-          <Text style={{
-            color: 'white',
-            fontSize: 16,
-            fontWeight: 'bold',
-          }}>{kcal} Kcal</Text>
-          <Text className={'text-white/50'}>{cardText}</Text>
-        </Card.Content>
-      </Card>
-
+      <Hoverable>
+        {isHovered => (
+          <Pressable accessible>
+            <Card mode={'contained'} style={[
+              styles.card,
+              {backgroundColor: isHovered ? globalColors.pink : '#fff'}
+            ]}>
+              <Card.Title title="" subtitle=""
+                          left={() => cardIcon}
+                          style={[
+                            styles.cardTitle,
+                            {borderTopWidth: isHovered ? 0 : 3}
+                          ]}/>
+              <Card.Content style={{paddingHorizontal: 7,}}>
+                <Text adjustsFontSizeToFit={true} style={{color: isHovered ? 'white' : '#000'}}><strong>{kcal}</strong> Kcal</Text>
+                <Text adjustsFontSizeToFit={true} style={{color: isHovered ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.5)'}}>{cardText}</Text>
+              </Card.Content>
+            </Card>
+          </Pressable>
+        )}
+      </Hoverable>
     </View>
   );
 };
@@ -56,11 +46,13 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   card: {
-    width: 110,
-    height: 110,
-    backgroundColor: globalColors.gray,
+    width: 100,
+    height: 100,
   },
-
+  cardTitle: {
+    paddingHorizontal: 7,
+    minHeight: 40,
+  }
 
 });
 
