@@ -22,7 +22,7 @@ const activities: IActivity[] = [
     subtitle: 'Time (hours)',
     perKcal: 0.7,
     type: 'time',
-    cardIcon: <FontAwesome6 name="dumbbell" size={18} color="white" />,
+    cardIcon: <FontAwesome6 name="dumbbell" size={18} color="black" />,
     cardText: 'Dumbbell',
   },
   {
@@ -32,7 +32,7 @@ const activities: IActivity[] = [
     subtitle: 'Steps',
     perKcal: 0.1,
     type: 'steps',
-    cardIcon: <Ionicons name="footsteps-outline" size={18} color="white" />,
+    cardIcon: <Ionicons name="footsteps" size={18} color="black" />,
     cardText: 'Treadmill',
   },
   {
@@ -42,7 +42,7 @@ const activities: IActivity[] = [
     subtitle: 'Points',
     perKcal: 0.2,
     type: 'points',
-    cardIcon: <MaterialCommunityIcons name="jump-rope" size={18} color="white" />,
+    cardIcon: <MaterialCommunityIcons name="jump-rope" size={18} color="black" />,
     cardText: 'Rope',
   },
 ];
@@ -62,6 +62,7 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
         {
           activities.map(item => (
             <SingleActivity
+              key={item.id}
               activity={{
                 ...item,
                 perKcal: commonHelper.getPercentageKcal(kcal, item.perKcal),

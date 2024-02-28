@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Implemented some content on  Activity card">
-      <change afterPath="$PROJECT_DIR$/app/data.ts" afterDir="false" />
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Re-factored some code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/common.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/common.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/interfaces/activity.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/interfaces/activity.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -57,6 +56,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alina\IdeaProjects\fitness-house\app" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
-      <workItem from="1708967722199" duration="26194000" />
+      <workItem from="1708967722199" duration="28371000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -124,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709045845783</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Re-factored some code">
+      <option name="closed" value="true" />
+      <created>1709114326007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709114326007</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +161,7 @@
     <MESSAGE value="Added ScrollView to scroll a screen" />
     <MESSAGE value="Implemented some content from Activity card" />
     <MESSAGE value="Implemented some content on  Activity card" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented some content on  Activity card" />
+    <MESSAGE value="Re-factored some code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Re-factored some code" />
   </component>
 </project>

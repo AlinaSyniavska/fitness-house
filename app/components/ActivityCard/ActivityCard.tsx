@@ -1,40 +1,48 @@
-import React, {FC} from 'react';
-import {StyleSheet, View} from "react-native";
-import {Card, Text} from "react-native-paper";
-
-import { FontAwesome6 } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import React, {FC, ReactNode, useRef} from 'react';
+import {StyleSheet, View, Text} from "react-native";
+import {Card} from "react-native-paper";
+import { useHover, useFocus, useActive } from 'react-native-web-hooks';
 
 import {globalColors} from "../../constants/colors";
 
 interface IProps {
   kcal: number,
+  cardIcon: ReactNode,
+  cardText: string,
 }
 
+const ActivityCard: FC<IProps> = ({kcal, cardIcon, cardText}) => {
 
-const LeftContent = () => <FontAwesome6 name="dumbbell" size={18} color="white" />
-const LeftContent2 = () => <Ionicons name="footsteps-outline" size={24} color="black" />
-const LeftContent3 = () => <MaterialCommunityIcons name="jump-rope" size={24} color="black" />
+  const ref = useRef(null);
 
-const ActivityCard: FC<IProps> = ({kcal}) => {
+  const isHovered = useHover(ref);
+
   return (
     <View style={styles.container}>
 
-      <Card style={styles.card}>
-        <Card.Title title="" subtitle="" left={LeftContent} style={{
+      <Card
+        ref={ref.current}
+        style={[styles.card,
+        isHovered && {
+          backgroundColor: globalColors.pink,
+        }
+          ]}
+      >
+        <Card.Title title="" subtitle=""
+                    left={() => cardIcon}
+                    style={{
           minHeight: 40,
           borderTopWidth: 3,
         }}/>
         <Card.Content style={{
           // marginTop: 0,
         }}>
-          <Text variant="titleLarge" style={{
+          <Text style={{
             color: 'white',
             fontSize: 16,
             fontWeight: 'bold',
           }}>{kcal} Kcal</Text>
-          <Text variant="bodyMedium" className={'text-white/50'}>Dumbbell</Text>
+          <Text className={'text-white/50'}>{cardText}</Text>
         </Card.Content>
       </Card>
 

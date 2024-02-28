@@ -14,7 +14,7 @@ interface IProps {
 
 const SingleActivity: FC<IProps> = ({activity}) => {
 
-  const {title, subtitle, type, perKcal, cardIcon, cardText} = activity;
+  const {id, title, subtitle, type, perKcal, cardIcon, cardText} = activity;
 
   return (
     <View style={styles.container}>
@@ -30,9 +30,9 @@ const SingleActivity: FC<IProps> = ({activity}) => {
         <CustomProgressBar progress={(Math.random() * (0.9 - 0.4) + 0.4)} color={globalColors.pink}/>
       </View>
 
-{/*      <View style={{marginTop: 50}}>
-        <ActivityCard kcal={perKcal}/>
-      </View>*/}
+      <View style={{marginTop: 50}}>
+        <ActivityCard key={id} kcal={perKcal} cardIcon={cardIcon} cardText={cardText}/>
+      </View>
     </View>
   );
 };

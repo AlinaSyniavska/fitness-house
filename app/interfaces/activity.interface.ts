@@ -7,6 +7,6 @@ export interface IActivity {
   subtitle: string,
   perKcal: number,
   type: string,
-  cardIcon: ReactNode | Element,
+  cardIcon: ReactNode,
   cardText: string,
 }
