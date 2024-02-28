@@ -79,7 +79,6 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     gap: 30,
     width: '100%',
   },

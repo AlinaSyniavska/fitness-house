@@ -14,8 +14,6 @@ export const globalStyles = StyleSheet.create({
     backgroundColor: '#fff',
     borderTopWidth: 2,
     borderTopColor: globalColors.lightGray,
-    // borderTopRightRadius: 15,
-    // borderTopLeftRadius: 15,
   }
 });
 

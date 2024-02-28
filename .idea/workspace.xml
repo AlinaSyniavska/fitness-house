@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added some content to Activity card. Installed a library to work with a hook useHover">
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Activity card is done">
+      <change afterPath="$PROJECT_DIR$/assets/home/Ellipse.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alina/IdeaProjects/fitness-house/assets/home",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,6 +60,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alina\IdeaProjects\fitness-house\assets\home" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alina\IdeaProjects\fitness-house\app" />
     </key>
@@ -66,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
-      <workItem from="1708967722199" duration="32945000" />
+      <workItem from="1708967722199" duration="40967000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -140,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709116721139</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Activity card is done">
+      <option name="closed" value="true" />
+      <created>1709122100325</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709122100325</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +185,7 @@
     <MESSAGE value="Implemented some content on  Activity card" />
     <MESSAGE value="Re-factored some code" />
     <MESSAGE value="Added some content to Activity card. Installed a library to work with a hook useHover" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some content to Activity card. Installed a library to work with a hook useHover" />
+    <MESSAGE value="Activity card is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Activity card is done" />
   </component>
 </project>
