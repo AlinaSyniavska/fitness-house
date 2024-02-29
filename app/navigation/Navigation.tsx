@@ -10,13 +10,12 @@ import DailyInfo from "../screens/DailyInfo/DailyInfo";
 export type RootStackParamList = {
   Main: undefined;
   Home: undefined;
-  DailyInfo: undefined;
+  DailyInfo: {kcal: number};
   Profile: { userId: string };
 };
 
 const Navigation = () => {
 
-  // const Stack = createStackNavigator<RootStackParamList>();
   const Stack = createNativeStackNavigator<RootStackParamList>();
 
   return (

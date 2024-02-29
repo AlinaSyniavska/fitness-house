@@ -22,7 +22,7 @@ const activities: IActivity[] = [
     subtitle: 'Time (hours)',
     perKcal: 0.7,
     type: 'time',
-    cardIcon: <FontAwesome6 name="dumbbell" size={20} color="black" />,
+    cardIcon: <FontAwesome6 name="dumbbell" size={20} color="#fff" />,
     cardText: 'Dumbbell',
   },
   {
@@ -32,7 +32,7 @@ const activities: IActivity[] = [
     subtitle: 'Steps',
     perKcal: 0.1,
     type: 'steps',
-    cardIcon: <Ionicons name="footsteps" size={20} color="black" />,
+    cardIcon: <Ionicons name="footsteps" size={20} color="#fff" />,
     cardText: 'Treadmill',
   },
   {
@@ -42,7 +42,7 @@ const activities: IActivity[] = [
     subtitle: 'Points',
     perKcal: 0.2,
     type: 'points',
-    cardIcon: <MaterialCommunityIcons name="jump-rope" size={20} color="black" />,
+    cardIcon: <MaterialCommunityIcons name="jump-rope" size={20} color="#fff" />,
     cardText: 'Rope',
   },
 ];

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Fixed positions of some components">
-      <change afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added a new screen DailyInfo. Replaced icons in Footer with new ones.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout/FooterMenu/FooterMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout/FooterMenu/FooterMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/Navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/home/Ellipse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,7 @@
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
       <workItem from="1708967722199" duration="43121000" />
-      <workItem from="1709201218562" duration="8135000" />
+      <workItem from="1709201218562" duration="11755000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -165,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709131086372</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added a new screen DailyInfo. Replaced icons in Footer with new ones.">
+      <option name="closed" value="true" />
+      <created>1709211839361</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709211839361</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +199,7 @@
     <MESSAGE value="Added some content to Activity card. Installed a library to work with a hook useHover" />
     <MESSAGE value="Activity card is done" />
     <MESSAGE value="Fixed positions of some components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed positions of some components" />
+    <MESSAGE value="Added a new screen DailyInfo. Replaced icons in Footer with new ones." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a new screen DailyInfo. Replaced icons in Footer with new ones." />
   </component>
 </project>
