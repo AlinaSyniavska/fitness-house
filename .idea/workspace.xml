@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Created context, a custom hook that allows to access the value of a context provided by a parent component">
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added more states to the context">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/CustomProgressBar/CustomProgressBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CustomProgressBar/CustomProgressBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/context/DataContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/context/DataContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Title/Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Home/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
       <workItem from="1708967722199" duration="43121000" />
-      <workItem from="1709201218562" duration="19127000" />
+      <workItem from="1709201218562" duration="33814000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -188,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709280843072</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added more states to the context">
+      <option name="closed" value="true" />
+      <created>1709285540807</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709285540808</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +231,7 @@
     <MESSAGE value="Added a new screen DailyInfo. Replaced icons in Footer with new ones." />
     <MESSAGE value="Changed a style of ActivityCard" />
     <MESSAGE value="Created context, a custom hook that allows to access the value of a context provided by a parent component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created context, a custom hook that allows to access the value of a context provided by a parent component" />
+    <MESSAGE value="Added more states to the context" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more states to the context" />
   </component>
 </project>

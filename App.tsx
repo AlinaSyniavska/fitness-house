@@ -8,17 +8,17 @@ import {DataProvider} from "./app/context/DataContext";
 
 export default function App() {
   return (
-    <PaperProvider>
-      <SafeAreaView style={{
-        width: '100%',
-        height: '100%',
-      }}>
-        <DataProvider>
+    <DataProvider>
+      <PaperProvider>
+        <SafeAreaView style={{
+          width: '100%',
+          height: '100%',
+        }}>
           <Navigation/>
           <StatusBar style="auto" backgroundColor={'white'}/>
-        </DataProvider>
-      </SafeAreaView>
-    </PaperProvider>
+        </SafeAreaView>
+      </PaperProvider>
+    </DataProvider>
   );
 }
 

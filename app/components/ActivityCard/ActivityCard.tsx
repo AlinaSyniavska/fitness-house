@@ -69,4 +69,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default ActivityCard;
+export default React.memo(ActivityCard);

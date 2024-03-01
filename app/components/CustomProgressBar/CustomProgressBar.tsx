@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {StyleSheet, View} from "react-native";
-import Title from "../Title/Title";
 import {ProgressBar} from "react-native-paper";
+
 import {globalColors} from "../../constants/colors";
 
 interface IProps {
@@ -38,4 +38,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default CustomProgressBar;
+export default React.memo(CustomProgressBar);

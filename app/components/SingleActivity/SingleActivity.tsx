@@ -1,4 +1,4 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {StyleSheet, View} from 'react-native';
 
 import {globalColors} from '../../constants/colors';
@@ -17,22 +17,26 @@ const SingleActivity: FC<IProps> = ({activity}) => {
 
   const {id, title, subtitle, type, perKcal, cardIcon, cardText} = activity;
   const {setSteps, setPoints} = useData();
+  const [currentTitle, setCurrentTitle] = useState<number>(0)
 
   useEffect(() => {
+    setCurrentTitle(+title);
+
     switch (type) {
-      case'steps':
-        setSteps(Number(title));
+      case 'steps':
+        setSteps(+title);
         break;
       case 'points':
-        setPoints(Number(title));
+        setPoints(+title);
         break;
     }
-  }, []);
+  }, [perKcal]);
 
   return (
     <View style={styles.container}>
       <Title
-        title={title}
+        // title={title}
+        title={currentTitle.toString()}
         titleSize={16}
         subtitle={subtitle}
         subtitleSize={14}

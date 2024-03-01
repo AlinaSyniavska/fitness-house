@@ -1,14 +1,14 @@
 import React, {FC, useEffect, useState} from 'react';
-import {Image, ImageBackgroundBase, SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
 import {NativeStackScreenProps} from 'react-native-screens/native-stack';
 
 import Calendar from '../../components/Calendar/Calendar';
 import HomePinkCard from '../../components/HomePinkCard/HomePinkCard';
-import DailyActivity from '../../components/DailyActivity/DailyActivity';
 import {commonHelper} from '../../helpers/common.helper';
 import FooterMenu from '../../layout/FooterMenu/FooterMenu';
 import {RootStackParamList} from '../../navigation/Navigation';
 import {globalStyles} from '../../styles';
+import {DailyActivity} from "../../components/DailyActivity/DailyActivity";
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 

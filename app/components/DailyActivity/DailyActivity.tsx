@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useCallback} from 'react';
 import {StyleSheet, View} from 'react-native';
 
 import {FontAwesome6} from '@expo/vector-icons';
@@ -48,18 +48,18 @@ const activities: IActivity[] = [
   },
 ];
 
-const DailyActivity: FC<IProps> = ({kcal}) => {
+export const DailyActivity: FC<IProps> = React.memo( ({kcal}) => {
 
   const {setDumbbellKcal, setStepKcal, setPointKcal} = useData();
 
-  const getPerKcal = (kcal: number, percentage: number, type: string): number => {
+  const setPerKcal = (kcal: number, percentage: number, type: string): number => {
     const perKcal = commonHelper.getPercentageKcal(kcal, percentage);
 
     switch (type) {
       case 'time':
         setDumbbellKcal(perKcal);
         break;
-      case'steps':
+      case 'steps':
         setStepKcal(perKcal);
         break;
       case 'points':
@@ -69,6 +69,8 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
 
     return perKcal;
   }
+
+  const setMemoTitle = useCallback( (func: Function): string => func().toString(), [kcal])
 
   return (
     <View style={styles.container}>
@@ -86,8 +88,9 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
               key={item.id}
               activity={{
                 ...item,
-                perKcal: getPerKcal(kcal, item.perKcal, item.type),
-                title: item.getTitle && item.getTitle().toString() || item.title,
+                perKcal: setPerKcal(kcal, item.perKcal, item.type),
+                // title: item.getTitle && item.getTitle().toString() || item.title,
+                title: item.getTitle && setMemoTitle(item.getTitle) || item.title,
               }}
             />
           ))
@@ -95,7 +98,8 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
       </View>
     </View>
   );
-};
+},
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -109,4 +113,3 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DailyActivity;
