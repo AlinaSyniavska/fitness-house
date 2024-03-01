@@ -1,14 +1,15 @@
 import React, {FC} from 'react';
 import {StyleSheet, View} from 'react-native';
 
-import { FontAwesome6 } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import {FontAwesome6} from '@expo/vector-icons';
+import {Ionicons} from '@expo/vector-icons';
+import {MaterialCommunityIcons} from '@expo/vector-icons';
 
 import {commonHelper} from '../../helpers/common.helper';
 import SingleActivity from '../SingleActivity/SingleActivity';
 import Title from '../Title/Title';
 import {IActivity} from "../../interfaces/activity.interface";
+import {useData} from "../../context/DataContext";
 
 interface IProps {
   kcal: number,
@@ -22,7 +23,7 @@ const activities: IActivity[] = [
     subtitle: 'Time (hours)',
     perKcal: 0.7,
     type: 'time',
-    cardIcon: <FontAwesome6 name="dumbbell" size={20} color="#fff" />,
+    cardIcon: <FontAwesome6 name="dumbbell" size={20} color="#fff"/>,
     cardText: 'Dumbbell',
   },
   {
@@ -32,7 +33,7 @@ const activities: IActivity[] = [
     subtitle: 'Steps',
     perKcal: 0.1,
     type: 'steps',
-    cardIcon: <Ionicons name="footsteps" size={20} color="#fff" />,
+    cardIcon: <Ionicons name="footsteps" size={20} color="#fff"/>,
     cardText: 'Treadmill',
   },
   {
@@ -42,12 +43,32 @@ const activities: IActivity[] = [
     subtitle: 'Points',
     perKcal: 0.2,
     type: 'points',
-    cardIcon: <MaterialCommunityIcons name="jump-rope" size={20} color="#fff" />,
+    cardIcon: <MaterialCommunityIcons name="jump-rope" size={20} color="#fff"/>,
     cardText: 'Rope',
   },
 ];
 
 const DailyActivity: FC<IProps> = ({kcal}) => {
+
+  const {setDumbbellKcal, setStepKcal, setPointKcal} = useData();
+
+  const getPerKcal = (kcal: number, percentage: number, type: string): number => {
+    const perKcal = commonHelper.getPercentageKcal(kcal, percentage);
+
+    switch (type) {
+      case 'time':
+        setDumbbellKcal(perKcal);
+        break;
+      case'steps':
+        setStepKcal(perKcal);
+        break;
+      case 'points':
+        setPointKcal(perKcal);
+        break;
+    }
+
+    return perKcal;
+  }
 
   return (
     <View style={styles.container}>
@@ -65,7 +86,7 @@ const DailyActivity: FC<IProps> = ({kcal}) => {
               key={item.id}
               activity={{
                 ...item,
-                perKcal: commonHelper.getPercentageKcal(kcal, item.perKcal),
+                perKcal: getPerKcal(kcal, item.perKcal, item.type),
                 title: item.getTitle && item.getTitle().toString() || item.title,
               }}
             />

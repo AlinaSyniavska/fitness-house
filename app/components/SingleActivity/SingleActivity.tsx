@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 import {StyleSheet, View} from 'react-native';
 
 import {globalColors} from '../../constants/colors';
@@ -7,6 +7,7 @@ import Title from '../Title/Title';
 import {commonHelper} from "../../helpers/common.helper";
 import ActivityCard from "../ActivityCard/ActivityCard";
 import {IActivity} from "../../interfaces/activity.interface";
+import {useData} from "../../context/DataContext";
 
 interface IProps {
   activity: IActivity,
@@ -15,6 +16,18 @@ interface IProps {
 const SingleActivity: FC<IProps> = ({activity}) => {
 
   const {id, title, subtitle, type, perKcal, cardIcon, cardText} = activity;
+  const {setSteps, setPoints} = useData();
+
+  useEffect(() => {
+    switch (type) {
+      case'steps':
+        setSteps(Number(title));
+        break;
+      case 'points':
+        setPoints(Number(title));
+        break;
+    }
+  }, []);
 
   return (
     <View style={styles.container}>

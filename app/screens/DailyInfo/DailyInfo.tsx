@@ -3,26 +3,23 @@ import {SafeAreaView, View, StyleSheet, Text} from "react-native";
 
 import {globalStyles} from "../../styles";
 import FooterMenu from "../../layout/FooterMenu/FooterMenu";
-import {useRoute} from "@react-navigation/native";
+import {useData} from "../../context/DataContext";
 
 interface IProps {
 }
 
 const DailyInfo: FC<IProps> = () => {
 
-
-  const route = useRoute();
-
-  console.log(route.params)
+  const {dumbbellKcal, stepKcal, pointKcal, steps, points} = useData();
 
   return (
     <SafeAreaView style={[globalStyles.screenContainer]}>
 
         <View style={styles.container}>
-          <Text style={{
-            marginTop: 100,
-            marginLeft: 20,
-          }}>Daily Info</Text>
+
+          <Text>***** {steps}, {points} *******</Text>
+          <Text>{dumbbellKcal}, {stepKcal}, {pointKcal}</Text>
+
         </View>
 
         <View style={globalStyles.footer}>
@@ -36,7 +33,8 @@ const DailyInfo: FC<IProps> = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-
+    marginTop: 100,
+    marginLeft: 20,
   },
 })
 

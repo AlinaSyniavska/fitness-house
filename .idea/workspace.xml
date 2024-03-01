@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Changed a style of ActivityCard">
-      <change afterPath="$PROJECT_DIR$/app/context/DataContext.tsx" afterDir="false" />
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Created context, a custom hook that allows to access the value of a context provided by a parent component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/context/DataContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/context/DataContext.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +74,7 @@
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
       <workItem from="1708967722199" duration="43121000" />
-      <workItem from="1709201218562" duration="14878000" />
+      <workItem from="1709201218562" duration="19127000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -178,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709216630904</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Created context, a custom hook that allows to access the value of a context provided by a parent component">
+      <option name="closed" value="true" />
+      <created>1709280843072</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709280843072</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +219,7 @@
     <MESSAGE value="Fixed positions of some components" />
     <MESSAGE value="Added a new screen DailyInfo. Replaced icons in Footer with new ones." />
     <MESSAGE value="Changed a style of ActivityCard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed a style of ActivityCard" />
+    <MESSAGE value="Created context, a custom hook that allows to access the value of a context provided by a parent component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created context, a custom hook that allows to access the value of a context provided by a parent component" />
   </component>
 </project>
