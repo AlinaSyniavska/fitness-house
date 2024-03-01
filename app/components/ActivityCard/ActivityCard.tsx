@@ -25,7 +25,9 @@ const ActivityCard: FC<IProps> = ({kcal, cardIcon, cardText}) => {
     <View style={styles.container}>
       <Hoverable>
         {isHovered => (
-          <Pressable accessible style={({pressed}) => [{backgroundColor: pressed ? 'globalColors.pink' : '#fff'}]}>
+          <Pressable accessible style={({pressed}) => [
+            {backgroundColor: pressed ? globalColors.lightPink : '#fff'}
+          ]}>
             <Card mode={'contained'} onPress={()=> goToDailyInfo(kcal)} style={[
               styles.card,
               // {backgroundColor: isHovered ? globalColors.pink : '#fff'}

@@ -3,16 +3,26 @@ import {SafeAreaView, View, StyleSheet, Text} from "react-native";
 
 import {globalStyles} from "../../styles";
 import FooterMenu from "../../layout/FooterMenu/FooterMenu";
+import {useRoute} from "@react-navigation/native";
 
 interface IProps {
 }
 
 const DailyInfo: FC<IProps> = () => {
+
+
+  const route = useRoute();
+
+  console.log(route.params)
+
   return (
     <SafeAreaView style={[globalStyles.screenContainer]}>
 
         <View style={styles.container}>
-          <Text>Daily Info</Text>
+          <Text style={{
+            marginTop: 100,
+            marginLeft: 20,
+          }}>Daily Info</Text>
         </View>
 
         <View style={globalStyles.footer}>
