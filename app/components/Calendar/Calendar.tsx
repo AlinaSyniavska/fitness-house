@@ -30,7 +30,7 @@ const Calendar: FC<IProps> = ({setDate}) => {
         dateNumberStyle={{color: globalColors.gray}}
         iconContainer={{flex: 0.1}}
         onDateSelected={(date) => selectDate(date)}
-        style={{width: 'auto', height:70, paddingTop: 5, paddingBottom: 5}}
+        style={{width: 'auto', height:80, paddingTop: 5, paddingBottom: 5}}
       />
     </View>
   );
@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default Calendar;
+export default React.memo(Calendar);

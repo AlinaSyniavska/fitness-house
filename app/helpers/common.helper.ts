@@ -1,15 +1,36 @@
+import {numbers} from "../constants/numbers";
+
 export const commonHelper = {
-	format: (num: number) => {
-		const n = String(num),
-			p = n.indexOf('.');
-		return n.replace(/\d(?=(?:\d{3})+(?:\.|$))/g, (m, i) =>
-			p < 0 || i < p ? `${m} ` : m
-		);
-	},
-	getRandomKcal: (): number => Math.floor(Math.random() * (2000 - 1500) + 1500),
-	getRandomWorkoutTime: (): number => Math.round(Math.random() * (3 - 1) + 1),
-	getRandomStepsCounter: (): number =>
-		Math.round(Math.random() * (10000 - 9000) + 9000),
-	getRandomRopesCounter: (): number =>
-		Math.round(Math.random() * (1200 - 1000) + 1000),
+  format: (num: number) => {
+    const n = String(num),
+      p = n.indexOf('.');
+    return n.replace(/\d(?=(?:\d{3})+(?:\.|$))/g, (m, i) =>
+      p < 0 || i < p ? `${m} ` : m
+    );
+  },
+
+  getRandomKcal: (): number => Math.floor(Math.random() * (numbers.maxKcal - numbers.minKcal) + numbers.minKcal),
+
+  getPercentageKcal: (kcal: number, percentage: number): number => Math.trunc(kcal * percentage),
+
+  getRandomWorkoutTime: (): number => Math.round(Math.random() * (numbers.maxWorkoutTime - numbers.minWorkoutTime) + numbers.minWorkoutTime),
+
+  getRandomStepsCounter: (): number =>
+    Math.round(Math.random() * (numbers.maxStepsCounter - numbers.minStepsCounter) + numbers.minStepsCounter),
+
+  getRandomRopesCounter: (): number =>
+    Math.round(Math.random() * (numbers.maxPointsCounter - numbers.minPointsCounter) + numbers.minPointsCounter),
+
+  getProgress: (type: string, value: number): number => {
+    switch (type) {
+      case "time":
+        return value / numbers.maxWorkoutTime;
+      case "steps":
+        return value / numbers.maxStepsCounter;
+      case "points":
+        return value / numbers.maxPointsCounter;
+      default:
+        return 1;
+    }
+  },
 };

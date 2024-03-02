@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {StyleSheet, Text, View} from "react-native";
+import {FlexAlignType, StyleSheet, Text, View} from "react-native";
 import {globalColors} from "../../constants/colors";
 
 interface IProps {
@@ -7,11 +7,15 @@ interface IProps {
   titleSize: number,
   subtitle: string,
   subtitleSize: number,
+  position?: FlexAlignType,
 }
 
-const Title: FC<IProps> = ({title, titleSize, subtitle, subtitleSize}) => {
+const Title: FC<IProps> = ({title, titleSize, subtitle, subtitleSize, position = 'center'}) => {
   return (
-    <View style={styles.container}>
+    <View style={[
+      styles.container,
+      {alignItems: position},
+    ]}>
       <Text style={[styles.title, {fontSize: titleSize}]}>{title}</Text>
       <Text style={[styles.subtitle, {fontSize: subtitleSize}]}>{subtitle}</Text>
     </View>
@@ -21,7 +25,7 @@ const Title: FC<IProps> = ({title, titleSize, subtitle, subtitleSize}) => {
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
-    alignItems: 'center',
+    // alignItems: 'center',
     width: '100%',
   },
   title: {
@@ -34,4 +38,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default Title;
+export default React.memo(Title);

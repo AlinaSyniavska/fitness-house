@@ -12,8 +12,12 @@ const Profile: FC<Props> = ({route, navigation}) => {
 
   return (
     <SafeAreaView style={globalStyles.screenContainer}>
-      <View>
-        <Text>Profile</Text>
+      <View style={{
+        marginTop: 100,
+        marginLeft: 20,
+      }}>
+        <Text className={'text-2xl'}>Profile</Text>
+        <Text className={'text-red-500 font-bold text-2xl'}>Profile</Text>
       </View>
 
       <View style={globalStyles.footer}>

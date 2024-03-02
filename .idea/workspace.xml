@@ -1,44 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/CustomProgressBar/CustomProgressBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/DailyActivity/DailyActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/common.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/common.helper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/navigation/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/Navigation.tsx" afterDir="false" />
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Optimised the code. Implemented avoiding redundant re-renderings">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Title/Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2ctxCul8lzSMggbeKdwkrzJ6bEy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alina/IdeaProjects/fitness-house/assets/home&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\alina\\IdeaProjects\\fitness-house\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alina\IdeaProjects\fitness-house\assets\home" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alina\IdeaProjects\fitness-house\app" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,7 +70,171 @@
       <option name="presentableId" value="Default" />
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
+      <workItem from="1708967722199" duration="43121000" />
+      <workItem from="1709201218562" duration="35065000" />
     </task>
+    <task id="LOCAL-00001" summary="Added constant numbers">
+      <option name="closed" value="true" />
+      <created>1708968724853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708968724853</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added a helper to calculate progress">
+      <option name="closed" value="true" />
+      <created>1708969138802</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708969138802</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented randomly performed activities">
+      <option name="closed" value="true" />
+      <created>1708969706425</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708969706425</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed style of the main card from Home screen">
+      <option name="closed" value="true" />
+      <created>1709023216309</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709023216309</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added ScrollView to scroll a screen">
+      <option name="closed" value="true" />
+      <created>1709024528587</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709024528587</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implemented some content from Activity card">
+      <option name="closed" value="true" />
+      <created>1709033380712</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709033380712</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implemented some content on  Activity card">
+      <option name="closed" value="true" />
+      <created>1709045845782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709045845783</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Re-factored some code">
+      <option name="closed" value="true" />
+      <created>1709114326007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709114326007</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added some content to Activity card. Installed a library to work with a hook useHover">
+      <option name="closed" value="true" />
+      <created>1709116721139</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709116721139</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Activity card is done">
+      <option name="closed" value="true" />
+      <created>1709122100325</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709122100325</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed positions of some components">
+      <option name="closed" value="true" />
+      <created>1709131086370</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709131086372</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added a new screen DailyInfo. Replaced icons in Footer with new ones.">
+      <option name="closed" value="true" />
+      <created>1709211839361</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709211839361</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Changed a style of ActivityCard">
+      <option name="closed" value="true" />
+      <created>1709216630904</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709216630904</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Created context, a custom hook that allows to access the value of a context provided by a parent component">
+      <option name="closed" value="true" />
+      <created>1709280843072</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709280843072</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added more states to the context">
+      <option name="closed" value="true" />
+      <created>1709285540807</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709285540808</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Optimised the code. Implemented avoiding redundant re-renderings">
+      <option name="closed" value="true" />
+      <created>1709300678820</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709300678821</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added constant numbers" />
+    <MESSAGE value="Added a helper to calculate progress" />
+    <MESSAGE value="Implemented randomly performed activities" />
+    <MESSAGE value="Fixed style of the main card from Home screen" />
+    <MESSAGE value="Added ScrollView to scroll a screen" />
+    <MESSAGE value="Implemented some content from Activity card" />
+    <MESSAGE value="Implemented some content on  Activity card" />
+    <MESSAGE value="Re-factored some code" />
+    <MESSAGE value="Added some content to Activity card. Installed a library to work with a hook useHover" />
+    <MESSAGE value="Activity card is done" />
+    <MESSAGE value="Fixed positions of some components" />
+    <MESSAGE value="Added a new screen DailyInfo. Replaced icons in Footer with new ones." />
+    <MESSAGE value="Changed a style of ActivityCard" />
+    <MESSAGE value="Created context, a custom hook that allows to access the value of a context provided by a parent component" />
+    <MESSAGE value="Added more states to the context" />
+    <MESSAGE value="Optimised the code. Implemented avoiding redundant re-renderings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimised the code. Implemented avoiding redundant re-renderings" />
   </component>
 </project>
