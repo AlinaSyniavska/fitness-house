@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Optimised the code. Implemented avoiding redundant re-renderings">
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Changed style properties of Title component">
+      <change afterPath="$PROJECT_DIR$/assets/dailyInfo/caloriesIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/dailyInfo/heartIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/dailyInfo/stepIcon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Title/Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/context/DataContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/context/DataContext.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,24 +43,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alina/IdeaProjects/fitness-house/assets/home&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\alina\\IdeaProjects\\fitness-house\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alina/IdeaProjects/fitness-house/assets/dailyInfo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\alina\\IdeaProjects\\fitness-house\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alina\IdeaProjects\fitness-house\assets\dailyInfo" />
       <recent name="C:\Users\alina\IdeaProjects\fitness-house\assets\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -71,7 +78,7 @@
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
       <workItem from="1708967722199" duration="43121000" />
-      <workItem from="1709201218562" duration="35065000" />
+      <workItem from="1709201218562" duration="38625000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -201,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709300678821</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Changed style properties of Title component">
+      <option name="closed" value="true" />
+      <created>1709302191591</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709302191592</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +250,7 @@
     <MESSAGE value="Created context, a custom hook that allows to access the value of a context provided by a parent component" />
     <MESSAGE value="Added more states to the context" />
     <MESSAGE value="Optimised the code. Implemented avoiding redundant re-renderings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimised the code. Implemented avoiding redundant re-renderings" />
+    <MESSAGE value="Changed style properties of Title component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed style properties of Title component" />
   </component>
 </project>

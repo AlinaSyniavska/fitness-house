@@ -22,6 +22,8 @@ type DataContextType = {
   setSteps: Dispatch<SetStateAction<number>>;
   points: number;
   setPoints: Dispatch<SetStateAction<number>>;
+  date: Date;
+  setDate: Dispatch<SetStateAction<Date>>;
 };
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -41,10 +43,26 @@ const DataProvider = (props: { children: ReactNode }): ReactElement => {
   const [pointKcal, setPointKcal] = useState<number>(0);
   const [steps, setSteps] = useState<number>(0);
   const [points, setPoints] = useState<number>(0);
+  const [date, setDate] = useState<Date>(new Date());
 
   return <DataContext.Provider {...props}
-                               value={{ user, setUser, dumbbellKcal, setDumbbellKcal, stepKcal, setStepKcal, pointKcal, setPointKcal, steps, setSteps, points, setPoints }}
+                               value={{
+                                 user,
+                                 setUser,
+                                 dumbbellKcal,
+                                 setDumbbellKcal,
+                                 stepKcal,
+                                 setStepKcal,
+                                 pointKcal,
+                                 setPointKcal,
+                                 steps,
+                                 setSteps,
+                                 points,
+                                 setPoints,
+                                 date,
+                                 setDate
+                               }}
   />;
 };
 
-export { DataProvider, useData };
+export {DataProvider, useData};

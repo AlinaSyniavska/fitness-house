@@ -1,9 +1,10 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import {View, StyleSheet} from "react-native";
 import CalendarStrip from 'react-native-calendar-strip';
 import { Moment } from 'moment';
 
 import {globalColors} from "../../constants/colors";
+import {useData} from "../../context/DataContext";
 
 interface IProps {
   setDate: (date: Date) => any,
@@ -11,11 +12,11 @@ interface IProps {
 
 const Calendar: FC<IProps> = ({setDate}) => {
 
-  const [currentDate, setCurrentDate] = useState<Date>(new Date());
+  const {setDate: setContextDate} = useData();
 
   const selectDate = (date: Moment) => {
     setDate(new Date(date.toISOString()));
-    setCurrentDate(new Date(date.toISOString()));
+    setContextDate(new Date(date.toISOString()));
   }
 
   return (

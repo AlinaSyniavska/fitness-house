@@ -43,7 +43,7 @@ const SingleActivity: FC<IProps> = ({activity}) => {
       />
 
       <View style={styles.progressBarContainer}>
-        <CustomProgressBar progress={commonHelper.getProgress(type, +title)} color={'#000'}/>
+        <CustomProgressBar progress={commonHelper.getProgress(type, currentTitle)} color={'#000'}/>
         <CustomProgressBar progress={(Math.random() * (0.9 - 0.4) + 0.4)} color={globalColors.pink}/>
       </View>
 

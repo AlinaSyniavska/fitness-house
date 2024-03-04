@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
     color: '#000',
   },
   subtitle: {
-    fontSize: 16,
     color: globalColors.gray,
   },
 })
