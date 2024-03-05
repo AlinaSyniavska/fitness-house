@@ -8,6 +8,7 @@ import {useData} from "../../context/DataContext";
 import Title from "../../components/Title/Title";
 import {Card} from "react-native-paper";
 import {globalColors} from "../../constants/colors";
+import AvatarHeader from "../../components/AvatarHeader/AvatarHeader";
 
 interface IProps {
 }
@@ -19,6 +20,8 @@ const DailyInfo: FC<IProps> = () => {
     <SafeAreaView style={[globalStyles.screenContainer]}>
 
       <View style={styles.container}>
+
+        <AvatarHeader/>
 
         <Title
           title={'Today\'s Information'}
@@ -158,11 +161,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 50,
     marginHorizontal: 20,
+    gap: 25,
   },
   cardContainer: {
     flex: 1,
     flexDirection: 'column',
-    marginTop: 20,
+    // marginTop: 20,
     gap: 10,
   },
   cardRowContainer: {
