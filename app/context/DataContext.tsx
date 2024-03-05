@@ -9,8 +9,8 @@ import React, {
 } from "react";
 
 type DataContextType = {
-  user: { [key: string]: any } | null;
-  setUser: Dispatch<SetStateAction<{ [key: string]: any } | null>>;
+  // user: { [key: string]: any } | null;
+  // setUser: Dispatch<SetStateAction<{ [key: string]: any } | null>>;
 
   dumbbellKcal: number;
   setDumbbellKcal: Dispatch<SetStateAction<number>>;
@@ -37,7 +37,7 @@ function useData(): DataContextType {
 }
 
 const DataProvider = (props: { children: ReactNode }): ReactElement => {
-  const [user, setUser] = useState<{ [key: string]: any } | null>(null);
+  // const [user, setUser] = useState<{ [key: string]: any } | null>(null);
   const [dumbbellKcal, setDumbbellKcal] = useState<number>(0);
   const [stepKcal, setStepKcal] = useState<number>(0);
   const [pointKcal, setPointKcal] = useState<number>(0);
@@ -47,8 +47,8 @@ const DataProvider = (props: { children: ReactNode }): ReactElement => {
 
   return <DataContext.Provider {...props}
                                value={{
-                                 user,
-                                 setUser,
+                                 // user,
+                                 // setUser,
                                  dumbbellKcal,
                                  setDumbbellKcal,
                                  stepKcal,

@@ -5,7 +5,6 @@ import {PaperProvider} from 'react-native-paper';
 import Navigation from "./app/navigation/Navigation";
 import {DataProvider} from "./app/context/DataContext";
 
-
 export default function App() {
   return (
     <DataProvider>

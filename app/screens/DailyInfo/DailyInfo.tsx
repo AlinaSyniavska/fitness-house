@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {SafeAreaView, View, StyleSheet, Image} from "react-native";
+import {SafeAreaView, View, StyleSheet, Image, ImageBackground, Dimensions} from "react-native";
 import {FontAwesome5} from '@expo/vector-icons';
 
 import {globalStyles} from "../../styles";
@@ -13,7 +13,6 @@ interface IProps {
 }
 
 const DailyInfo: FC<IProps> = () => {
-
   const {dumbbellKcal, stepKcal, pointKcal, steps, points, date} = useData();
 
   return (
@@ -58,7 +57,7 @@ const DailyInfo: FC<IProps> = () => {
                           titleVariant={'titleSmall'}
                           titleStyle={{verticalAlign: 'middle',}}
                           right={() => <FontAwesome5 name="running" size={22} color={globalColors.pink}
-                                              style={styles.cardIcon}/>}
+                                                     style={styles.cardIcon}/>}
                           style={styles.cardTitle}
               />
               <Card.Content>
@@ -115,6 +114,30 @@ const DailyInfo: FC<IProps> = () => {
             </Card>
           </View>
 
+          <View style={styles.cardRowContainer}>
+            {/*Heart bpm*/}
+            <Card mode={'contained'} style={styles.singleCard}>
+              <ImageBackground source={require('../../../assets/dailyInfo/Chart2.png')} resizeMode="cover"
+                               style={styles.bgCard}>
+                <Card.Title title="Heart" subtitle=""
+                            titleVariant={'titleSmall'}
+                            titleStyle={{verticalAlign: 'middle',}}
+                            right={() => <Image source={require('../../../assets/dailyInfo/heartIcon.png')}
+                                                resizeMode={'contain'} style={styles.cardIcon}/>}
+                            style={[styles.cardTitle, {paddingRight: 20, paddingTop: 60,}]}
+                />
+                <Card.Content style={{paddingBottom: 15}}>
+                  <Title
+                    title={'74'}
+                    titleSize={16}
+                    subtitle={'bpm'}
+                    subtitleSize={12}
+                    position={'flex-start'}
+                  />
+                </Card.Content>
+              </ImageBackground>
+            </Card>
+          </View>
 
         </View>
 
@@ -131,6 +154,8 @@ const DailyInfo: FC<IProps> = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
     marginTop: 50,
     marginHorizontal: 20,
   },
@@ -145,7 +170,8 @@ const styles = StyleSheet.create({
     gap: 10,
     padding: 10,
     borderRadius: 24,
-    backgroundColor: globalColors.lightPink
+    backgroundColor: globalColors.lightPink,
+    width: Dimensions.get('window').width * 0.9,
   },
   card: {
     flex: 1,
@@ -168,6 +194,19 @@ const styles = StyleSheet.create({
   cardTitle: {
     margin: 0,
     minHeight: 20,
+  },
+  singleCard: {
+    flex: 1,
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    borderRadius: 24,
+    minWidth: 110,
+    width: '100%',
+    height: 180,
+  },
+  bgCard: {
+    height: '100%',
+    width: '100%',
+    justifyContent: 'space-between',
   }
 })
 

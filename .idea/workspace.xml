@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Changed style properties of Title component">
-      <change afterPath="$PROJECT_DIR$/assets/dailyInfo/caloriesIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/dailyInfo/heartIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/dailyInfo/stepIcon.png" afterDir="false" />
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added cards with today's info">
+      <change afterPath="$PROJECT_DIR$/assets/dailyInfo/Chart.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SingleActivity/SingleActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Title/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/context/DataContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/context/DataContext.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alina/IdeaProjects/fitness-house/assets/dailyInfo",
+    "last_opened_file_path": "C:/Users/alina/IdeaProjects/fitness-house",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,6 +73,8 @@
       <workItem from="1708944557407" duration="280000" />
       <workItem from="1708967722199" duration="43121000" />
       <workItem from="1709201218562" duration="38625000" />
+      <workItem from="1709551687208" duration="11361000" />
+      <workItem from="1709622312930" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -216,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709302191592</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added cards with today's info">
+      <option name="closed" value="true" />
+      <created>1709562288614</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709562288615</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +255,7 @@
     <MESSAGE value="Added more states to the context" />
     <MESSAGE value="Optimised the code. Implemented avoiding redundant re-renderings" />
     <MESSAGE value="Changed style properties of Title component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed style properties of Title component" />
+    <MESSAGE value="Added cards with today's info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cards with today's info" />
   </component>
 </project>
