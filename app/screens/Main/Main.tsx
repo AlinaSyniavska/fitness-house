@@ -35,7 +35,7 @@ const Main: FC<Props> = ({route, navigation}) => {
                 },
                 styles.btn,
               ]}>
-              <Text style={styles.btnText} onPress={() => navigation.navigate('Home')}>Go!</Text>
+              <Text style={styles.btnText} onPress={() => navigation.navigate('Login')}>Go!</Text>
             </Pressable>
           </View>
         </View>
@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   btnText: {
+    paddingHorizontal: 50,
     textAlign: 'center',
     color: '#000',
     fontWeight: 'bold',

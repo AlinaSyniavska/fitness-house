@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added cards with today's info">
-      <change afterPath="$PROJECT_DIR$/assets/dailyInfo/Chart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Made some template for a real user avatar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alina/IdeaProjects/fitness-house",
+    "last_opened_file_path": "C:/Users/alina/IdeaProjects/meduzzen-messenger",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,6 +71,7 @@
       <workItem from="1709201218562" duration="38625000" />
       <workItem from="1709551687208" duration="11361000" />
       <workItem from="1709622312930" duration="603000" />
+      <workItem from="1709630870177" duration="13037000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -220,7 +217,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709562288615</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Completed all cards with today's info">
+      <option name="closed" value="true" />
+      <created>1709642818837</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709642818838</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Made some template for a real user avatar">
+      <option name="closed" value="true" />
+      <created>1709646404495</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709646404495</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +269,8 @@
     <MESSAGE value="Optimised the code. Implemented avoiding redundant re-renderings" />
     <MESSAGE value="Changed style properties of Title component" />
     <MESSAGE value="Added cards with today's info" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added cards with today's info" />
+    <MESSAGE value="Completed all cards with today's info" />
+    <MESSAGE value="Made some template for a real user avatar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made some template for a real user avatar" />
   </component>
 </project>
