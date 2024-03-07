@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import { View, Button } from 'react-native';
+import {View, Pressable, Text, StyleSheet} from 'react-native';
 import {NativeStackScreenProps} from "react-native-screens/native-stack";
 
 import {RootStackParamList} from "../../navigation/Navigation";
@@ -14,25 +14,25 @@ const Login: FC<Props> = ({route, navigation}) => {
   const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
-/*    try {
-      const userCredential = await auth().signInWithEmailAndPassword(email, password);
-      const user = userCredential.user;
-      console.log('Logged in user:', user);
-    } catch (error) {
-      console.error('Login error:', error);
-    }*/
+    /*    try {
+          const userCredential = await auth().signInWithEmailAndPassword(email, password);
+          const user = userCredential.user;
+          console.log('Logged in user:', user);
+        } catch (error) {
+          console.error('Login error:', error);
+        }*/
 
 
     navigation.navigate('Home')
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <TextInput
         mode="flat"
         label="Email"
         placeholder="Type Your Google Email"
-        right={<TextInput.Affix text="/100" />}
+        right={<TextInput.Affix text="/100"/>}
         value={email}
         onChangeText={(text) => setEmail(text)}
       />
@@ -42,15 +42,44 @@ const Login: FC<Props> = ({route, navigation}) => {
         label="Password"
         placeholder="Type Your Google Password"
         secureTextEntry
-        right={<TextInput.Icon icon="eye" />}
+        right={<TextInput.Icon icon="eye"/>}
         value={password}
         onChangeText={(text) => setPassword(text)}
       />
 
-
-      <Button title="Login" onPress={handleLogin} color={`${globalColors.pink}`} />
+      <Pressable style={({pressed}) => [
+        {backgroundColor: pressed ? globalColors.lightPink : globalColors.lightGray},
+        styles.btn,
+      ]}>
+        <Text style={styles.btnText} onPress={handleLogin}>Sign In</Text>
+      </Pressable>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: globalColors.pink,
+    paddingHorizontal: 20,
+    gap: 20,
+  },
+  btn: {
+    width: '70%',
+    borderRadius: 50,
+    padding: 10,
+    alignSelf: "center",
+  },
+  btnText: {
+    paddingHorizontal: 50,
+    textAlign: 'center',
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 20,
+  },
+
+
+});
 
 export default Login;

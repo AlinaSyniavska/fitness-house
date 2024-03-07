@@ -30,9 +30,7 @@ const Main: FC<Props> = ({route, navigation}) => {
 
             <Pressable
               style={({pressed}) => [
-                {
-                  backgroundColor: pressed ? globalColors.lightPink : globalColors.lightGray,
-                },
+                {backgroundColor: pressed ? globalColors.lightPink : globalColors.lightGray},
                 styles.btn,
               ]}>
               <Text style={styles.btnText} onPress={() => navigation.navigate('Login')}>Go!</Text>
