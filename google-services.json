@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "493584401551",
+    "project_id": "fitness-house-auth",
+    "storage_bucket": "fitness-house-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493584401551:android:463aa67fe4f070622bdcfa",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493584401551-67kudbq3iq8l5454es58oaa10p89983h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "80d1d6ac72e607bd2e1ae4218806d40be36cea7b"
+          }
+        },
+        {
+          "client_id": "493584401551-0a30ojimoht2abh2a0g0ptv5p497gm96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLlFsCFM6iDLmmWj-Pp8OsjEmqMgeSSaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493584401551-0a30ojimoht2abh2a0g0ptv5p497gm96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
