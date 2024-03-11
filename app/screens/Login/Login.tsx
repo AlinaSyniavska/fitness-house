@@ -1,28 +1,21 @@
 import React, {FC, useState} from 'react';
-import {View, Pressable, Text, StyleSheet} from 'react-native';
+import {View, Pressable, Text, StyleSheet, SafeAreaView, TouchableOpacity, ImageBackground} from 'react-native';
 import {NativeStackScreenProps} from "react-native-screens/native-stack";
+import { Ionicons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 import {RootStackParamList} from "../../navigation/Navigation";
 import {globalColors} from "../../constants/colors";
 import {TextInput} from "react-native-paper";
-// import auth from '@react-native-firebase/auth';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 const Login: FC<Props> = ({route, navigation}) => {
-  const [email, setEmail] = useState('');
+
+/*  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
-    /*    try {
-          const userCredential = await auth().signInWithEmailAndPassword(email, password);
-          const user = userCredential.user;
-          console.log('Logged in user:', user);
-        } catch (error) {
-          console.error('Login error:', error);
-        }*/
-
-
     navigation.navigate('Home')
   };
 
@@ -54,7 +47,47 @@ const Login: FC<Props> = ({route, navigation}) => {
         <Text style={styles.btnText} onPress={handleLogin}>Sign In</Text>
       </Pressable>
     </View>
+  );*/
+
+  return (
+    <SafeAreaView
+      style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+    >
+      <Ionicons name="logo-firebase" size={100} color="#FFA611" />
+      <Text style={{ fontSize: 32, fontWeight: "bold" }}>
+        Sign In with{" "}
+        <Text style={{ color: "#4285F4" }}>
+          G<Text style={{ color: "#EA4336" }}>o</Text>
+          <Text style={{ color: "#FBBC04" }}>o</Text>
+          <Text style={{ color: "#4285F4" }}>g</Text>
+          <Text style={{ color: "#34A853" }}>l</Text>
+          <Text style={{ color: "#EA4336" }}>e</Text>
+        </Text>
+      </Text>
+      <Text style={{ fontSize: 32, fontWeight: "bold" }}>And Firebase</Text>
+      <TouchableOpacity
+        style={{
+          backgroundColor: "#4285F4",
+          width: "90%",
+          padding: 10,
+          borderRadius: 15,
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 15,
+          marginTop: 80,
+          marginBottom: 150,
+        }}
+        onPress={() => route.params.promptAsync()}
+      >
+        <AntDesign name="google" size={30} color="white" />
+        <Text style={{ fontWeight: "bold", color: "white", fontSize: 17 }}>
+          Sign In with Google
+        </Text>
+      </TouchableOpacity>
+    </SafeAreaView>
   );
+
 };
 
 const styles = StyleSheet.create({

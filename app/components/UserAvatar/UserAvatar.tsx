@@ -14,7 +14,7 @@ const UserAvatar: FC<IProps> = () => {
 
       {
         authUser
-        ? <Avatar.Image size={48} source={require('../../../assets/dailyInfo/woman-avatar.jpg')} />
+        ? <Avatar.Image size={48} source={require('../../../assets/dailyInfo/woman-avatar.png')} />
           : <Avatar.Text size={48} label="XD" />
       }
 

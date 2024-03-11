@@ -2,18 +2,24 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAWUlUoHN4KTw15oYqvkeVucUGXVSiU3Y4",
-    authDomain: "fitness-house-auth-b39f7.firebaseapp.com",
-    projectId: "fitness-house-auth-b39f7",
-    storageBucket: "fitness-house-auth-b39f7.appspot.com",
-    messagingSenderId: "460538649930",
-    appId: "1:460538649930:web:9db00a11bd4df096e3b5b3"
+    apiKey: "AIzaSyBC7Bu6IMpzEvsnpgBk51N_lr2Ns6ADtBM",
+    authDomain: "fitness-house-42193.firebaseapp.com",
+    projectId: "fitness-house-42193",
+    storageBucket: "fitness-house-42193.appspot.com",
+    messagingSenderId: "728167157155",
+    appId: "1:728167157155:web:2f7074db881cbbc6051e16"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 export const auth = getAuth(app);
+/*const auth = initializeAuth(app, {
+    persistence: getReactNativePersistence(ReactNativeAsyncStorage)
+});*/
 
 
-// Android: 389771338876-0gb72b46ni6etaom7oqetqjcbiadt36n.apps.googleusercontent.com
+
+// Android: 1015776871421-nl21e58cptdc00bdb6qavm2sbreume81.apps.googleusercontent.com
+// Android: 728167157155-aeh63rqn64dt3d61gurn7ao7uua2h125.apps.googleusercontent.com
 
