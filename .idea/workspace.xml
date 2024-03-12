@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added custom fonts to the application">
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Replaced default fonts with custom ones on the DailyInfo screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ActivityCard/ActivityCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/AvatarHeader/AvatarHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AvatarHeader/AvatarHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Title/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UserAvatar/UserAvatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UserAvatar/UserAvatar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Calendar/Calendar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HomePinkCard/HomePinkCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HomePinkCard/HomePinkCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout/FooterMenu/FooterMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout/FooterMenu/FooterMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +92,7 @@
       <workItem from="1709792660675" duration="19000" />
       <workItem from="1709796495231" duration="10687000" />
       <workItem from="1710136964026" duration="27027000" />
-      <workItem from="1710229192682" duration="5941000" />
+      <workItem from="1710229192682" duration="7992000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -308,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710233582161</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Replaced default fonts with custom ones on the DailyInfo screen">
+      <option name="closed" value="true" />
+      <created>1710235602790</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1710235602791</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +337,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Implemented randomly performed activities" />
     <MESSAGE value="Fixed style of the main card from Home screen" />
     <MESSAGE value="Added ScrollView to scroll a screen" />
     <MESSAGE value="Implemented some content from Activity card" />
@@ -352,6 +361,7 @@
     <MESSAGE value="Integrated Login with Firebase in the application" />
     <MESSAGE value="Removed libraries related to firebase" />
     <MESSAGE value="Added custom fonts to the application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added custom fonts to the application" />
+    <MESSAGE value="Replaced default fonts with custom ones on the DailyInfo screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced default fonts with custom ones on the DailyInfo screen" />
   </component>
 </project>

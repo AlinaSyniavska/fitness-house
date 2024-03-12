@@ -6,6 +6,8 @@ import { Hoverable } from 'react-native-web-hooks';
 import {globalColors} from "../../constants/colors";
 import {NavigationProp, useNavigation} from "@react-navigation/native";
 import {RootStackParamList} from "../../navigation/Navigation";
+import {useFonts} from "expo-font";
+import {Quicksand_400Regular} from "@expo-google-fonts/quicksand";
 
 interface IProps {
   kcal: number,
@@ -14,7 +16,7 @@ interface IProps {
 }
 
 const ActivityCard: FC<IProps> = ({kcal, cardIcon, cardText}) => {
-
+  const [fontsLoaded] = useFonts({Quicksand_400Regular});
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
   const goToDailyInfo = (kcal: number) => {
@@ -39,11 +41,15 @@ const ActivityCard: FC<IProps> = ({kcal, cardIcon, cardText}) => {
                             styles.cardTitle,
                             // {borderTopWidth: isHovered ? 0 : 3}
                           ]}/>
-              <Card.Content style={{paddingHorizontal: 15,}}>
+              <Card.Content style={{paddingHorizontal: 15}}>
                 {/*<Text adjustsFontSizeToFit={true} style={{color: isHovered ? 'white' : '#000'}}><Text style={{fontWeight: 'bold'}}>{kcal}</Text> Kcal</Text>*/}
                 {/*<Text adjustsFontSizeToFit={true} style={{color: isHovered ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.5)'}}>{cardText}</Text>*/}
-                <Text adjustsFontSizeToFit={true} style={{color: 'white'}}><Text style={{fontWeight: 'bold'}}>{kcal}</Text> Kcal</Text>
-                <Text adjustsFontSizeToFit={true} style={{color: 'rgba(255,255,255,0.7)'}}>{cardText}</Text>
+                <Text adjustsFontSizeToFit={true} style={[{color: 'white'}, styles.quicksandRegular]}>
+                  <Text style={{fontWeight: 'bold'}}>{kcal}</Text> Kcal
+                </Text>
+                <Text adjustsFontSizeToFit={true} style={[{color: 'rgba(255,255,255,0.7)'}, styles.quicksandRegular]}>
+                  {cardText}
+                </Text>
               </Card.Content>
             </Card>
           </Pressable>
@@ -65,7 +71,10 @@ const styles = StyleSheet.create({
   cardTitle: {
     paddingHorizontal: 15,
     minHeight: 40,
-  }
+  },
+  quicksandRegular: {
+    fontFamily: "Quicksand_400Regular",
+  },
 
 });
 

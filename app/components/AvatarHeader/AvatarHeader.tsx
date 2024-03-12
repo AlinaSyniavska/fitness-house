@@ -30,11 +30,10 @@ const AvatarHeader: FC<IProps> = () => {
 
 const styles = StyleSheet.create({
   container: {
-    // paddingHorizontal: 30,
     display: 'flex',
-    width: '100%',
+    // width: '100%',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    gap: 20,
     alignItems: 'center',
   },
   userInfo: {
