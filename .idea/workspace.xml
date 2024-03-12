@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Removed libraries related to firebase">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Quicksand-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-native.config.js" afterDir="false" />
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Added custom fonts to the application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AvatarHeader/AvatarHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AvatarHeader/AvatarHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Title/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/UserAvatar/UserAvatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UserAvatar/UserAvatar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +90,7 @@
       <workItem from="1709792660675" duration="19000" />
       <workItem from="1709796495231" duration="10687000" />
       <workItem from="1710136964026" duration="27027000" />
-      <workItem from="1710229192682" duration="3814000" />
+      <workItem from="1710229192682" duration="5941000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -307,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710230171808</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added custom fonts to the application">
+      <option name="closed" value="true" />
+      <created>1710233582160</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710233582161</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +327,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added a helper to calculate progress" />
     <MESSAGE value="Implemented randomly performed activities" />
     <MESSAGE value="Fixed style of the main card from Home screen" />
     <MESSAGE value="Added ScrollView to scroll a screen" />
@@ -351,6 +351,7 @@
     <MESSAGE value="Set Up a Firebase Project. Created a project in GCP." />
     <MESSAGE value="Integrated Login with Firebase in the application" />
     <MESSAGE value="Removed libraries related to firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed libraries related to firebase" />
+    <MESSAGE value="Added custom fonts to the application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added custom fonts to the application" />
   </component>
 </project>

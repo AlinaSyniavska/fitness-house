@@ -9,12 +9,18 @@ import Title from "../../components/Title/Title";
 import {Card} from "react-native-paper";
 import {globalColors} from "../../constants/colors";
 import AvatarHeader from "../../components/AvatarHeader/AvatarHeader";
+import {useFonts} from "expo-font";
+import { Quicksand_600SemiBold } from "@expo-google-fonts/quicksand";
 
 interface IProps {
 }
 
 const DailyInfo: FC<IProps> = () => {
   const {dumbbellKcal, stepKcal, pointKcal, steps, points, date} = useData();
+
+  const [fontsLoaded] = useFonts({
+    Quicksand_600SemiBold,
+  });
 
   return (
     <SafeAreaView style={[globalStyles.screenContainer]}>
@@ -38,7 +44,7 @@ const DailyInfo: FC<IProps> = () => {
             <Card mode={'contained'} style={styles.card}>
               <Card.Title title="Calories" subtitle=""
                           titleVariant={'titleSmall'}
-                          titleStyle={{verticalAlign: 'middle',}}
+                          titleStyle={{verticalAlign: 'middle', fontFamily: 'Quicksand_600SemiBold'}}
                           right={() => <Image source={require('../../../assets/dailyInfo/caloriesIcon.png')}
                                               resizeMode={'contain'} style={styles.cardIcon}/>}
                           style={styles.cardTitle}
@@ -58,7 +64,7 @@ const DailyInfo: FC<IProps> = () => {
             <Card mode={'contained'} style={styles.card}>
               <Card.Title title="Steps" subtitle=""
                           titleVariant={'titleSmall'}
-                          titleStyle={{verticalAlign: 'middle',}}
+                          titleStyle={{verticalAlign: 'middle', fontFamily: 'Quicksand_600SemiBold'}}
                           right={() => <FontAwesome5 name="running" size={22} color={globalColors.pink}
                                                      style={styles.cardIcon}/>}
                           style={styles.cardTitle}
@@ -80,7 +86,7 @@ const DailyInfo: FC<IProps> = () => {
             <Card mode={'contained'} style={styles.card}>
               <Card.Title title="Calories" subtitle=""
                           titleVariant={'titleSmall'}
-                          titleStyle={{verticalAlign: 'middle',}}
+                          titleStyle={{verticalAlign: 'middle', fontFamily: 'Quicksand_600SemiBold'}}
                           right={() => <Image source={require('../../../assets/dailyInfo/caloriesIcon.png')}
                                               resizeMode={'contain'} style={styles.cardIcon}/>}
                           style={styles.cardTitle}
@@ -100,7 +106,7 @@ const DailyInfo: FC<IProps> = () => {
             <Card mode={'contained'} style={styles.card}>
               <Card.Title title="Points" subtitle=""
                           titleVariant={'titleSmall'}
-                          titleStyle={{verticalAlign: 'middle',}}
+                          titleStyle={{verticalAlign: 'middle', fontFamily: 'Quicksand_600SemiBold'}}
                           right={() => <Image source={require('../../../assets/dailyInfo/stepIcon.png')}
                                               resizeMode={'contain'} style={styles.cardIcon}/>}
                           style={styles.cardTitle}
@@ -124,7 +130,7 @@ const DailyInfo: FC<IProps> = () => {
                                style={styles.bgCard}>
                 <Card.Title title="Heart" subtitle=""
                             titleVariant={'titleSmall'}
-                            titleStyle={{verticalAlign: 'middle',}}
+                            titleStyle={{verticalAlign: 'middle', fontFamily: 'Quicksand_600SemiBold'}}
                             right={() => <Image source={require('../../../assets/dailyInfo/heartIcon.png')}
                                                 resizeMode={'contain'} style={styles.cardIcon}/>}
                             style={[styles.cardTitle, {paddingRight: 20, paddingTop: 60,}]}
@@ -198,6 +204,7 @@ const styles = StyleSheet.create({
   cardTitle: {
     margin: 0,
     minHeight: 20,
+    fontFamily: 'Quicksand_600SemiBold'
   },
   singleCard: {
     flex: 1,

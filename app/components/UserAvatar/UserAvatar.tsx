@@ -24,8 +24,8 @@ const UserAvatar: FC<IProps> = () => {
 
 const styles = StyleSheet.create({
   container: {
-    display: 'flex',
-    width: '100%',
+    // display: 'flex',
+    // width: '100%',
   },
 })
 

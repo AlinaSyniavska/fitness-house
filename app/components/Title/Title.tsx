@@ -31,8 +31,8 @@ const Title: FC<IProps> = ({title, titleSize, subtitle, subtitleSize, position =
       styles.container,
       {alignItems: position},
     ]}>
-      <Text style={[styles.title, {fontSize: titleSize}, styles.quicksand]}>{title}</Text>
-      <Text style={[styles.subtitle, {fontSize: subtitleSize}]}>{subtitle}</Text>
+      <Text style={[styles.title, {fontSize: titleSize}, styles.quicksandBold]}>{title}</Text>
+      <Text style={[styles.subtitle, {fontSize: subtitleSize}, styles.quicksandRegular]}>{subtitle}</Text>
     </View>
   );
 };
@@ -48,8 +48,11 @@ const styles = StyleSheet.create({
   subtitle: {
     color: globalColors.gray,
   },
-  quicksand: {
+  quicksandBold: {
     fontFamily: "Quicksand_700Bold",
+  },
+  quicksandRegular: {
+    fontFamily: "Quicksand_400Regular",
   },
 })
 
