@@ -5,10 +5,13 @@ import {NativeStackScreenProps} from "react-native-screens/native-stack";
 import {RootStackParamList} from "../../navigation/Navigation";
 import {globalColors} from "../../constants/colors";
 import {TextInput} from "react-native-paper";
+import {useFonts} from "expo-font";
+import {Quicksand_700Bold} from "@expo-google-fonts/quicksand";
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 const Login: FC<Props> = ({route, navigation}) => {
+  const [fontsLoaded] = useFonts({Quicksand_700Bold});
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -67,10 +70,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 50,
     textAlign: 'center',
     color: '#000',
-    fontWeight: 'bold',
     fontSize: 20,
+    fontFamily: 'Quicksand_700Bold',
   },
-
 
 });
 
