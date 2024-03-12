@@ -1,12 +1,14 @@
 import React, {FC, useState} from 'react';
 import {View, Text, StyleSheet, Pressable} from 'react-native';
 import {NativeStackScreenProps} from "react-native-screens/native-stack";
+import {useFonts} from "expo-font";
+import {TextInput} from "react-native-paper";
+import {Quicksand_700Bold} from "@expo-google-fonts/quicksand";
+import {Ionicons} from "@expo/vector-icons";
+import {AntDesign} from "@expo/vector-icons";
 
 import {RootStackParamList} from "../../navigation/Navigation";
 import {globalColors} from "../../constants/colors";
-import {TextInput} from "react-native-paper";
-import {useFonts} from "expo-font";
-import {Quicksand_700Bold} from "@expo-google-fonts/quicksand";
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
@@ -22,31 +24,55 @@ const Login: FC<Props> = ({route, navigation}) => {
 
   return (
     <View style={styles.container}>
-      <TextInput
-        mode="flat"
-        label="Email"
-        placeholder="Type Your Google Email"
-        right={<TextInput.Affix text="/100"/>}
-        value={email}
-        onChangeText={(text) => setEmail(text)}
-      />
 
-      <TextInput
-        mode="flat"
-        label="Password"
-        placeholder="Type Your Google Password"
-        secureTextEntry
-        right={<TextInput.Icon icon="eye"/>}
-        value={password}
-        onChangeText={(text) => setPassword(text)}
-      />
+      <View style={{alignItems: "center", justifyContent: "center"}}>
+        <Ionicons name="logo-firebase" size={100} color="#FFA611"/>
+        <Text style={{fontSize: 32, fontFamily: 'Quicksand_700Bold'}}>
+          Sign In with{" "}
+          <Text style={{color: "#4285F4"}}>
+            G<Text style={{color: "#EA4336"}}>o</Text>
+            <Text style={{color: "#FBBC04"}}>o</Text>
+            <Text style={{color: "#4285F4"}}>g</Text>
+            <Text style={{color: "#34A853"}}>l</Text>
+            <Text style={{color: "#EA4336"}}>e</Text>
+          </Text>
+        </Text>
+        <Text style={{fontSize: 32, fontFamily: 'Quicksand_700Bold'}}>And Firebase</Text>
+      </View>
 
-      <Pressable style={({pressed}) => [
-        {backgroundColor: pressed ? globalColors.lightPink : globalColors.lightGray},
-        styles.btn,
-      ]}>
-        <Text style={styles.btnText} onPress={handleLogin}>Sign In</Text>
-      </Pressable>
+      <View style={{
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 20,
+      }}>
+        <TextInput
+          mode="outlined"
+          label="Email"
+          placeholder="Type Your Google Email"
+          right={<TextInput.Affix text="/100"/>}
+          value={email}
+          onChangeText={(text) => setEmail(text)}
+        />
+
+        <TextInput
+          mode="outlined"
+          label="Password"
+          placeholder="Type Your Google Password"
+          secureTextEntry
+          right={<TextInput.Icon icon="eye"/>}
+          value={password}
+          onChangeText={(text) => setPassword(text)}
+        />
+
+        <Pressable style={({pressed}) => [
+          {backgroundColor: pressed ? globalColors.lightPink : globalColors.lightGray},
+          styles.btn,
+        ]}>
+          <AntDesign name="google" size={24} color="white"/>
+          <Text style={styles.btnText} onPress={handleLogin}>Sign In with Google</Text>
+        </Pressable>
+      </View>
+
     </View>
   );
 
@@ -55,22 +81,27 @@ const Login: FC<Props> = ({route, navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    backgroundColor: globalColors.pink,
+    backgroundColor: 'white',
     paddingHorizontal: 20,
-    gap: 20,
+    paddingTop: 100,
+    gap: 50,
   },
   btn: {
-    width: '70%',
     borderRadius: 50,
-    padding: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 30,
     alignSelf: "center",
+    backgroundColor: '#4285F4',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 20,
   },
   btnText: {
-    paddingHorizontal: 50,
     textAlign: 'center',
-    color: '#000',
-    fontSize: 20,
+    color: '#fff',
+    fontSize: 18,
     fontFamily: 'Quicksand_700Bold',
   },
 
