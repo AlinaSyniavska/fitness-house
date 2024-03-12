@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBC7Bu6IMpzEvsnpgBk51N_lr2Ns6ADtBM",
-    authDomain: "fitness-house-42193.firebaseapp.com",
-    projectId: "fitness-house-42193",
-    storageBucket: "fitness-house-42193.appspot.com",
-    messagingSenderId: "728167157155",
-    appId: "1:728167157155:web:2f7074db881cbbc6051e16"
+    apiKey: "AIzaSyBv3x5PA0ifaIDL0MfICXlXqHlRGw4WMbw",
+    authDomain: "fitness-house-5c2db.firebaseapp.com",
+    projectId: "fitness-house-5c2db",
+    storageBucket: "fitness-house-5c2db.appspot.com",
+    messagingSenderId: "936095261062",
+    appId: "1:936095261062:web:5a9492e0edb3b9f50d4c07"
 };
 
 // Initialize Firebase
@@ -20,6 +20,5 @@ export const auth = getAuth(app);
 
 
 
-// Android: 1015776871421-nl21e58cptdc00bdb6qavm2sbreume81.apps.googleusercontent.com
-// Android: 728167157155-aeh63rqn64dt3d61gurn7ao7uua2h125.apps.googleusercontent.com
+// Android: 352251535958-u145kfag2bm7b6hiet011v68hbh5qcb2.apps.googleusercontent.com
 

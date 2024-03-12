@@ -8,32 +8,13 @@ import {
   ImageBackground, Image
 } from "react-native";
 import {NativeStackScreenProps} from "react-native-screens/native-stack";
-import * as Google from "expo-auth-session/providers/google";
-import {GoogleAuthProvider, signInWithCredential} from "firebase/auth";
 
 import {RootStackParamList} from "../../navigation/Navigation";
 import {globalColors} from "../../constants/colors";
-import {auth} from "../../../firebaseConfig";
-import * as WebBrowser from "expo-web-browser";
-
-WebBrowser.maybeCompleteAuthSession();
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Main'>;
 
 const Main: FC<Props> = ({route, navigation}) => {
-
-  const [userInfo, setUserInfo] = React.useState();
-  const [request, response, promptAsync] = Google.useIdTokenAuthRequest({
-    androidClientId: "389771338876-0gb72b46ni6etaom7oqetqjcbiadt36n.apps.googleusercontent.com",
-  });
-
-  React.useEffect(() => {
-    if (response?.type === "success") {
-      const { id_token } = response.params;
-      const credential = GoogleAuthProvider.credential(id_token);
-      signInWithCredential(auth, credential);
-    }
-  }, [response]);
 
   return (
     <SafeAreaView style={styles.mainContainer}>
@@ -52,8 +33,8 @@ const Main: FC<Props> = ({route, navigation}) => {
                 {backgroundColor: pressed ? globalColors.lightPink : globalColors.lightGray},
                 styles.btn,
               ]}>
-              <Text style={styles.btnText} onPress={() => navigation.navigate('Home')}>Go!</Text>
-              {/*<Text style={styles.btnText} onPress={() => navigation.navigate('Login', {promptAsync})}>Go!</Text>*/}
+              {/*<Text style={styles.btnText} onPress={() => navigation.navigate('Home')}>Go!</Text>*/}
+              <Text style={styles.btnText} onPress={() => navigation.navigate('Login')}>Go!</Text>
             </Pressable>
           </View>
         </View>

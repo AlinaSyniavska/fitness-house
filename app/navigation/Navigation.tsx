@@ -1,7 +1,6 @@
 import React from 'react';
 import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import {AuthRequestPromptOptions, AuthSessionResult} from "expo-auth-session";
 
 import Profile from "../screens/Profile/Profile";
 import Main from "../screens/Main/Main";
@@ -11,7 +10,7 @@ import Login from "../screens/Login/Login";
 
 export type RootStackParamList = {
   Main: undefined;
-  Login: { promptAsync:  (options?: (AuthRequestPromptOptions | undefined)) => Promise<AuthSessionResult> };
+  Login: undefined;
   Home: undefined;
   DailyInfo: {kcal: number};
   Profile: { userId: string };
