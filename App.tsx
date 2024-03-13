@@ -16,11 +16,19 @@ export default function App() {
           height: '100%',
         }}>
           <Navigation/>
-          <StatusBar style="auto" backgroundColor={'white'}/>
+          {/*<StatusBar style="auto" backgroundColor={'white'}/>*/}
         </SafeAreaView>
       </PaperProvider>
     </DataProvider>
   );
 }
 
+
+// https://expo.dev/accounts/alinasyniavskamelekhin/projects/fitness-house/builds/609265eb-8572-46f0-8e43-883bbfe7f52a
+// https://expo.dev/accounts/alinasyniavskamelekhin/projects/fitness-house/builds/a96690b9-c465-469e-b9f9-69b4907a394b
+
+
+// com.alinasyniavskamelekhin.fitnesshouse
+// SHA certificate fingerprints
+// 80:d1:d6:ac:72:e6:07:bd:2e:1a:e4:21:88:06:d4:0b:e3:6c:ea:7b
 
