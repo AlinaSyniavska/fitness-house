@@ -1,3 +1,4 @@
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import React, {FC, useState} from 'react';
 import {View, Text, StyleSheet, Pressable} from 'react-native';
 import {NativeStackScreenProps} from "react-native-screens/native-stack";
@@ -9,6 +10,7 @@ import {AntDesign} from "@expo/vector-icons";
 
 import {RootStackParamList} from "../../navigation/Navigation";
 import {globalColors} from "../../constants/colors";
+import {auth} from "../../../firebaseConfig";
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
@@ -19,7 +21,14 @@ const Login: FC<Props> = ({route, navigation}) => {
   const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
-    navigation.navigate('Home')
+    try {
+      // const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      // const user = userCredential.user;
+      // console.log('Logged in user:', user);
+      navigation.navigate('Home')
+    } catch (error) {
+      console.error('Login error:', error);
+    }
   };
 
   return (
@@ -45,12 +54,13 @@ const Login: FC<Props> = ({route, navigation}) => {
         justifyContent: 'center',
         gap: 20,
       }}>
-        <TextInput
+{/*        <TextInput
           mode="outlined"
           label="Email"
           placeholder="Type Your Google Email"
           right={<TextInput.Affix text="/100"/>}
           value={email}
+          autoComplete={'email'}
           onChangeText={(text) => setEmail(text)}
         />
 
@@ -61,8 +71,9 @@ const Login: FC<Props> = ({route, navigation}) => {
           secureTextEntry
           right={<TextInput.Icon icon="eye"/>}
           value={password}
+          autoComplete={'password'}
           onChangeText={(text) => setPassword(text)}
-        />
+        />*/}
 
         <Pressable style={({pressed}) => [
           {backgroundColor: pressed ? globalColors.lightPink : globalColors.lightGray},

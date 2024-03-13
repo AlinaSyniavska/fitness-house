@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Replaced default fonts with custom ones on the Main screen">
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Improved SignIn screen style">
+      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebaseConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +92,7 @@
       <workItem from="1709792660675" duration="19000" />
       <workItem from="1709796495231" duration="10687000" />
       <workItem from="1710136964026" duration="27027000" />
-      <workItem from="1710229192682" duration="13355000" />
+      <workItem from="1710229192682" duration="24703000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -329,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710238460587</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Improved SignIn screen style">
+      <option name="closed" value="true" />
+      <created>1710246390077</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1710246390078</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +361,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Implemented some content from Activity card" />
     <MESSAGE value="Implemented some content on  Activity card" />
     <MESSAGE value="Re-factored some code" />
     <MESSAGE value="Added some content to Activity card. Installed a library to work with a hook useHover" />
@@ -373,6 +385,7 @@
     <MESSAGE value="Replaced default fonts with custom ones on the DailyInfo screen" />
     <MESSAGE value="Replaced default fonts with custom ones on the Home screen" />
     <MESSAGE value="Replaced default fonts with custom ones on the Main screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced default fonts with custom ones on the Main screen" />
+    <MESSAGE value="Improved SignIn screen style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved SignIn screen style" />
   </component>
 </project>
