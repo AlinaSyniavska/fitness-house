@@ -1,10 +1,11 @@
 import React, {FC} from 'react';
-import {SafeAreaView, Text, View} from "react-native";
+import {SafeAreaView, View} from "react-native";
 import {NativeStackScreenProps} from "react-native-screens/native-stack";
 
 import {RootStackParamList} from "../../navigation/Navigation";
 import FooterMenu from "../../layout/FooterMenu/FooterMenu";
 import {globalStyles} from "../../styles";
+import AvatarHeader from "../../components/AvatarHeader/AvatarHeader";
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Profile'>;
 
@@ -13,11 +14,10 @@ const Profile: FC<Props> = ({route, navigation}) => {
   return (
     <SafeAreaView style={globalStyles.screenContainer}>
       <View style={{
-        marginTop: 100,
+        marginTop: 50,
         marginLeft: 20,
       }}>
-        <Text className={'text-2xl'}>Profile</Text>
-        <Text className={'text-red-500 font-bold text-2xl'}>Profile</Text>
+        <AvatarHeader/>
       </View>
 
       <View style={globalStyles.footer}>

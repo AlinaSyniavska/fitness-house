@@ -1,6 +1,13 @@
 import React, {FC} from 'react';
 import {FlexAlignType, StyleSheet, Text, View} from "react-native";
 import {globalColors} from "../../constants/colors";
+import {useFonts} from "expo-font";
+import {
+  Quicksand_300Light,
+  Quicksand_400Regular,
+  Quicksand_500Medium, Quicksand_600SemiBold,
+  Quicksand_700Bold
+} from "@expo-google-fonts/quicksand";
 
 interface IProps {
   title: string,
@@ -11,13 +18,21 @@ interface IProps {
 }
 
 const Title: FC<IProps> = ({title, titleSize, subtitle, subtitleSize, position = 'center'}) => {
+  const [fontsLoaded] = useFonts({
+    Quicksand_700Bold,
+    Quicksand_300Light,
+    Quicksand_400Regular,
+    Quicksand_500Medium,
+    Quicksand_600SemiBold
+  });
+
   return (
     <View style={[
       styles.container,
       {alignItems: position},
     ]}>
-      <Text style={[styles.title, {fontSize: titleSize}]}>{title}</Text>
-      <Text style={[styles.subtitle, {fontSize: subtitleSize}]}>{subtitle}</Text>
+      <Text style={[styles.title, {fontSize: titleSize}, styles.quicksandBold]}>{title}</Text>
+      <Text style={[styles.subtitle, {fontSize: subtitleSize}, styles.quicksandRegular]}>{subtitle}</Text>
     </View>
   );
 };
@@ -25,16 +40,19 @@ const Title: FC<IProps> = ({title, titleSize, subtitle, subtitleSize, position =
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
-    // alignItems: 'center',
     width: '100%',
   },
   title: {
-    fontWeight: 'bold',
     color: '#000',
   },
   subtitle: {
-    fontSize: 16,
     color: globalColors.gray,
+  },
+  quicksandBold: {
+    fontFamily: "Quicksand_700Bold",
+  },
+  quicksandRegular: {
+    fontFamily: "Quicksand_400Regular",
   },
 })
 

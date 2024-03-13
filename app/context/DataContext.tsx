@@ -9,8 +9,8 @@ import React, {
 } from "react";
 
 type DataContextType = {
-  user: { [key: string]: any } | null;
-  setUser: Dispatch<SetStateAction<{ [key: string]: any } | null>>;
+  // user: { [key: string]: any } | null;
+  // setUser: Dispatch<SetStateAction<{ [key: string]: any } | null>>;
 
   dumbbellKcal: number;
   setDumbbellKcal: Dispatch<SetStateAction<number>>;
@@ -22,6 +22,8 @@ type DataContextType = {
   setSteps: Dispatch<SetStateAction<number>>;
   points: number;
   setPoints: Dispatch<SetStateAction<number>>;
+  date: Date;
+  setDate: Dispatch<SetStateAction<Date>>;
 };
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -35,16 +37,32 @@ function useData(): DataContextType {
 }
 
 const DataProvider = (props: { children: ReactNode }): ReactElement => {
-  const [user, setUser] = useState<{ [key: string]: any } | null>(null);
+  // const [user, setUser] = useState<{ [key: string]: any } | null>(null);
   const [dumbbellKcal, setDumbbellKcal] = useState<number>(0);
   const [stepKcal, setStepKcal] = useState<number>(0);
   const [pointKcal, setPointKcal] = useState<number>(0);
   const [steps, setSteps] = useState<number>(0);
   const [points, setPoints] = useState<number>(0);
+  const [date, setDate] = useState<Date>(new Date());
 
   return <DataContext.Provider {...props}
-                               value={{ user, setUser, dumbbellKcal, setDumbbellKcal, stepKcal, setStepKcal, pointKcal, setPointKcal, steps, setSteps, points, setPoints }}
+                               value={{
+                                 // user,
+                                 // setUser,
+                                 dumbbellKcal,
+                                 setDumbbellKcal,
+                                 stepKcal,
+                                 setStepKcal,
+                                 pointKcal,
+                                 setPointKcal,
+                                 steps,
+                                 setSteps,
+                                 points,
+                                 setPoints,
+                                 date,
+                                 setDate
+                               }}
   />;
 };
 
-export { DataProvider, useData };
+export {DataProvider, useData};

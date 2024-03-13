@@ -5,11 +5,15 @@ import { Entypo } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 
 import {globalColors} from "../../constants/colors";
+import {useFonts} from "expo-font";
+import {Quicksand_400Regular} from "@expo-google-fonts/quicksand";
 
 const FooterMenu = () => {
   // hooks
   const navigation = useNavigation();
   const route = useRoute();
+
+  const [fontsLoaded] = useFonts({Quicksand_400Regular});
 
   return (
     <View style={styles.container}>
@@ -45,6 +49,7 @@ const styles = StyleSheet.create({
   },
   navItem: {
     fontSize: 16,
+    fontFamily: "Quicksand_400Regular",
   }
 
 });

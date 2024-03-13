@@ -11,10 +11,13 @@ import {NativeStackScreenProps} from "react-native-screens/native-stack";
 
 import {RootStackParamList} from "../../navigation/Navigation";
 import {globalColors} from "../../constants/colors";
+import {useFonts} from "expo-font";
+import {Quicksand_500Medium, Quicksand_700Bold} from "@expo-google-fonts/quicksand";
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Main'>;
 
 const Main: FC<Props> = ({route, navigation}) => {
+  const [fontsLoaded] = useFonts({Quicksand_700Bold, Quicksand_500Medium});
 
   return (
     <SafeAreaView style={styles.mainContainer}>
@@ -30,12 +33,11 @@ const Main: FC<Props> = ({route, navigation}) => {
 
             <Pressable
               style={({pressed}) => [
-                {
-                  backgroundColor: pressed ? globalColors.lightPink : globalColors.lightGray,
-                },
+                {backgroundColor: pressed ? globalColors.lightPink : globalColors.lightGray},
                 styles.btn,
               ]}>
-              <Text style={styles.btnText} onPress={() => navigation.navigate('Home')}>Go!</Text>
+              {/*<Text style={styles.btnText} onPress={() => navigation.navigate('Home')}>Go!</Text>*/}
+              <Text style={styles.btnText} onPress={() => navigation.navigate('Login')}>Go!</Text>
             </Pressable>
           </View>
         </View>
@@ -71,9 +73,10 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   btnText: {
+    paddingHorizontal: 50,
     textAlign: 'center',
     color: '#000',
-    fontWeight: 'bold',
+    fontFamily: 'Quicksand_700Bold',
     fontSize: 20,
   },
   bgMainImage: {
@@ -89,13 +92,14 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 40,
-    fontWeight: 'bold',
+    fontFamily: 'Quicksand_700Bold',
   },
   subTitle: {
     fontSize: 16,
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: {width: 1, height: 1},
     textShadowRadius: 10,
+    fontFamily: 'Quicksand_500Medium',
   },
   text: {
     color: '#fff',

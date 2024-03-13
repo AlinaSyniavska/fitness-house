@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Optimised the code. Implemented avoiding redundant re-renderings">
+    <list default="true" id="00222543-1734-4e5a-bcaa-31510db49318" name="Changes" comment="Improved SignIn screen style">
+      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Title/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/DailyInfo/DailyInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebaseConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/firebaseConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +23,15 @@
       <list>
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -37,24 +45,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alina/IdeaProjects/fitness-house/assets/home&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\alina\\IdeaProjects\\fitness-house\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alina/IdeaProjects/marka_development",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\alina\\IdeaProjects\\fitness-house\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alina\IdeaProjects\fitness-house\assets\fonts" />
+      <recent name="C:\Users\alina\IdeaProjects\fitness-house\assets\dailyInfo" />
+      <recent name="C:\Users\alina\IdeaProjects\fitness-house\assets\signin" />
+      <recent name="C:\Users\alina\IdeaProjects\fitness-house" />
       <recent name="C:\Users\alina\IdeaProjects\fitness-house\assets\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -71,7 +84,15 @@
       <updated>1708944555781</updated>
       <workItem from="1708944557407" duration="280000" />
       <workItem from="1708967722199" duration="43121000" />
-      <workItem from="1709201218562" duration="35065000" />
+      <workItem from="1709201218562" duration="38625000" />
+      <workItem from="1709551687208" duration="11361000" />
+      <workItem from="1709622312930" duration="603000" />
+      <workItem from="1709630870177" duration="13037000" />
+      <workItem from="1709734630569" duration="2546000" />
+      <workItem from="1709792660675" duration="19000" />
+      <workItem from="1709796495231" duration="10687000" />
+      <workItem from="1710136964026" duration="27027000" />
+      <workItem from="1710229192682" duration="24703000" />
     </task>
     <task id="LOCAL-00001" summary="Added constant numbers">
       <option name="closed" value="true" />
@@ -201,7 +222,127 @@
       <option name="project" value="LOCAL" />
       <updated>1709300678821</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Changed style properties of Title component">
+      <option name="closed" value="true" />
+      <created>1709302191591</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709302191592</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added cards with today's info">
+      <option name="closed" value="true" />
+      <created>1709562288614</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709562288615</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Completed all cards with today's info">
+      <option name="closed" value="true" />
+      <created>1709642818837</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709642818838</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Made some template for a real user avatar">
+      <option name="closed" value="true" />
+      <created>1709646404495</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709646404495</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added a form to login">
+      <option name="closed" value="true" />
+      <created>1709736602346</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1709736602346</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added style to the login form">
+      <option name="closed" value="true" />
+      <created>1709810280077</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1709810280077</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Set Up a Firebase Project. Register the App with Firebase. Configured the OAuth Consent Screen (with Google). Installed Required Packages.">
+      <option name="closed" value="true" />
+      <created>1709819080838</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709819080838</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Set Up a Firebase Project. Created a project in GCP.">
+      <option name="closed" value="true" />
+      <created>1710149106435</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1710149106436</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Integrated Login with Firebase in the application">
+      <option name="closed" value="true" />
+      <created>1710168828443</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1710168828444</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Removed libraries related to firebase">
+      <option name="closed" value="true" />
+      <created>1710230171807</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710230171808</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added custom fonts to the application">
+      <option name="closed" value="true" />
+      <created>1710233582160</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710233582161</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Replaced default fonts with custom ones on the DailyInfo screen">
+      <option name="closed" value="true" />
+      <created>1710235602790</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1710235602791</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Replaced default fonts with custom ones on the Home screen">
+      <option name="closed" value="true" />
+      <created>1710237631071</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1710237631072</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Replaced default fonts with custom ones on the Main screen">
+      <option name="closed" value="true" />
+      <created>1710238460587</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1710238460587</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Improved SignIn screen style">
+      <option name="closed" value="true" />
+      <created>1710246390077</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1710246390078</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,12 +360,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added constant numbers" />
-    <MESSAGE value="Added a helper to calculate progress" />
-    <MESSAGE value="Implemented randomly performed activities" />
-    <MESSAGE value="Fixed style of the main card from Home screen" />
-    <MESSAGE value="Added ScrollView to scroll a screen" />
-    <MESSAGE value="Implemented some content from Activity card" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Implemented some content on  Activity card" />
     <MESSAGE value="Re-factored some code" />
     <MESSAGE value="Added some content to Activity card. Installed a library to work with a hook useHover" />
@@ -235,6 +371,21 @@
     <MESSAGE value="Created context, a custom hook that allows to access the value of a context provided by a parent component" />
     <MESSAGE value="Added more states to the context" />
     <MESSAGE value="Optimised the code. Implemented avoiding redundant re-renderings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimised the code. Implemented avoiding redundant re-renderings" />
+    <MESSAGE value="Changed style properties of Title component" />
+    <MESSAGE value="Added cards with today's info" />
+    <MESSAGE value="Completed all cards with today's info" />
+    <MESSAGE value="Made some template for a real user avatar" />
+    <MESSAGE value="Added a form to login" />
+    <MESSAGE value="Added style to the login form" />
+    <MESSAGE value="Set Up a Firebase Project. Register the App with Firebase. Configured the OAuth Consent Screen (with Google). Installed Required Packages." />
+    <MESSAGE value="Set Up a Firebase Project. Created a project in GCP." />
+    <MESSAGE value="Integrated Login with Firebase in the application" />
+    <MESSAGE value="Removed libraries related to firebase" />
+    <MESSAGE value="Added custom fonts to the application" />
+    <MESSAGE value="Replaced default fonts with custom ones on the DailyInfo screen" />
+    <MESSAGE value="Replaced default fonts with custom ones on the Home screen" />
+    <MESSAGE value="Replaced default fonts with custom ones on the Main screen" />
+    <MESSAGE value="Improved SignIn screen style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved SignIn screen style" />
   </component>
 </project>

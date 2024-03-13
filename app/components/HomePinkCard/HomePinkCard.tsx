@@ -2,6 +2,8 @@ import React, {FC} from 'react';
 import {Text, View, StyleSheet, Image} from "react-native";
 
 import {globalColors} from "../../constants/colors";
+import {useFonts} from "expo-font";
+import {Quicksand_500Medium, Quicksand_700Bold} from "@expo-google-fonts/quicksand";
 
 interface IProps {
   date: Date,
@@ -9,6 +11,8 @@ interface IProps {
 }
 
 const HomePinkCard: FC<IProps> = ({date, kcal}) => {
+  const [fontsLoaded] = useFonts({Quicksand_700Bold, Quicksand_500Medium});
+
   return (
     <View>
 
@@ -43,11 +47,12 @@ const styles = StyleSheet.create({
   cardDate: {
     color: '#000',
     fontSize: 16,
+    fontFamily: 'Quicksand_500Medium',
   },
   cardKcal: {
     color: '#000',
     fontSize: 24,
-    fontWeight: 'bold',
+    fontFamily: 'Quicksand_700Bold',
   }
 })
 
