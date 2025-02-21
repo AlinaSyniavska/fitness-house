@@ -14,7 +14,7 @@ const Profile: FC<Props> = ({route, navigation}) => {
   return (
     <SafeAreaView style={globalStyles.screenContainer}>
       <View style={{
-        marginTop: 50,
+        marginTop: 55,
         marginLeft: 20,
       }}>
         <AvatarHeader/>

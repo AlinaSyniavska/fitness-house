@@ -44,10 +44,11 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    gap: 30,
-    marginTop: 50,
+    gap: 25,
+    marginTop: 10,
     paddingHorizontal: 10,
-    paddingVertical: 30,
+    paddingTop: 40,
+    paddingBottom: 20,
   },
 });
 
